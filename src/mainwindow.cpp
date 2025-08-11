@@ -4,6 +4,8 @@
 #include "MainMenu.h"
 #include "Game.h"
 #include "optionsmenu.h"
+#include "ManageQuestionsMenu.h"
+#include "AddQuestionMenu.h"
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow) {
     ui->setupUi(this);
@@ -14,6 +16,8 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     MainMenu* menu    = addPage<MainMenu>(Page::Menu);
     Game* game    = addPage<Game>(Page::Game);
     OptionsMenu* options = addPage<OptionsMenu>(Page::Options);
+    ManageQuestionsMenu* manageQuestions = addPage<ManageQuestionsMenu>(Page::ManageQuestions);
+    AddQuestionMenu* addQuestion = addPage<AddQuestionMenu>(Page::AddQuestion);
 
     connect(menu, &MainMenu::start, this, [this]{
         goTo(Page::Game);
@@ -28,6 +32,29 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     connect(options, &OptionsMenu::back, this, [this]{
         goTo(Page::Menu);
     });
+    connect(options, &OptionsMenu::manageQuestions, this, [this]() {
+        goTo(Page::ManageQuestions);
+    });
+
+    connect(manageQuestions, &ManageQuestionsMenu::addQuestion, this, [this]() {
+        goTo(Page::AddQuestion);
+    });
+
+    connect(addQuestion, &AddQuestionMenu::submit, this,
+            [this, manageQuestions](QString type, QString q, QString a) {
+                // Create a Question object based on type & add to QuestionBank
+                // Then refresh manageQuestions->setQuestions(...)
+                goTo(Page::ManageQuestions);
+            });
+
+    connect(manageQuestions, &ManageQuestionsMenu::back, this, [this]() {
+        goTo(Page::Options);
+    });
+
+    connect(addQuestion, &AddQuestionMenu::cancel, this, [this]() {
+        goTo(Page::ManageQuestions);
+    });
+
 
     goTo(Page::Menu);
 }

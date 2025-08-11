@@ -391,39 +391,63 @@
 			null
 		],
 		[
-			"/Users/Anita/untitled/src/mainmenu.h",
-			"MU",
-			"UVLADIE3JM/moc_mainmenu.cpp",
-			null
-		],
-		[
 			"/Users/Anita/untitled/src/mainwindow.h",
 			"MU",
 			"UVLADIE3JM/moc_mainwindow.cpp",
 			null
 		],
 		[
-			"/Users/Anita/untitled/src/mcquestion.h",
+			"/Users/Anita/untitled/src/menus/addquestionmenu.h",
 			"MU",
-			"UVLADIE3JM/moc_mcquestion.cpp",
+			"XP73QANUIA/moc_addquestionmenu.cpp",
 			null
 		],
 		[
-			"/Users/Anita/untitled/src/optionsmenu.h",
+			"/Users/Anita/untitled/src/menus/mainmenu.h",
 			"MU",
-			"UVLADIE3JM/moc_optionsmenu.cpp",
+			"XP73QANUIA/moc_mainmenu.cpp",
 			null
 		],
 		[
-			"/Users/Anita/untitled/src/question.h",
+			"/Users/Anita/untitled/src/menus/managequestionsmenu.h",
 			"MU",
-			"UVLADIE3JM/moc_question.cpp",
+			"XP73QANUIA/moc_managequestionsmenu.cpp",
 			null
 		],
 		[
-			"/Users/Anita/untitled/src/saquestion.h",
+			"/Users/Anita/untitled/src/menus/optionsmenu.h",
 			"MU",
-			"UVLADIE3JM/moc_saquestion.cpp",
+			"XP73QANUIA/moc_optionsmenu.cpp",
+			null
+		],
+		[
+			"/Users/Anita/untitled/src/menus/questionbank.h",
+			"MU",
+			"XP73QANUIA/moc_questionbank.cpp",
+			null
+		],
+		[
+			"/Users/Anita/untitled/src/questions/mcquestion.h",
+			"MU",
+			"65LEBL6VHI/moc_mcquestion.cpp",
+			null
+		],
+		[
+			"/Users/Anita/untitled/src/questions/question.h",
+			"MU",
+			"65LEBL6VHI/moc_question.cpp",
+			null
+		],
+		[
+			"/Users/Anita/untitled/src/questions/saquestion.h",
+			"MU",
+			"65LEBL6VHI/moc_saquestion.cpp",
+			null
+		],
+		[
+			"/Users/Anita/untitled/src/questions/tfquestion.h",
+			"MU",
+			"65LEBL6VHI/moc_tfquestion.cpp",
 			null
 		]
 	],
@@ -440,6 +464,10 @@
 	],
 	"MOC_INCLUDES" : 
 	[
+		"/Users/Anita/untitled/src",
+		"/Users/Anita/untitled/ui",
+		"/Users/Anita/untitled/src/questions",
+		"/Users/Anita/untitled/src/menus",
 		"/Users/Anita/Qt/6.9.1/macos/lib/QtCore.framework/Headers",
 		"/Users/Anita/Qt/6.9.1/macos/lib/QtCore.framework",
 		"/Users/Anita/Qt/6.9.1/macos/mkspecs/macx-clang",
@@ -486,13 +514,17 @@
 	"SOURCES" : 
 	[
 		[ "/Users/Anita/untitled/src/game.cpp", "MU", null ],
-		[ "/Users/Anita/untitled/src/main.cpp", "MU", null ],
-		[ "/Users/Anita/untitled/src/mainmenu.cpp", "MU", null ],
 		[ "/Users/Anita/untitled/src/mainwindow.cpp", "MU", null ],
-		[ "/Users/Anita/untitled/src/mcquestion.cpp", "MU", null ],
-		[ "/Users/Anita/untitled/src/optionsmenu.cpp", "MU", null ],
-		[ "/Users/Anita/untitled/src/question.cpp", "MU", null ],
-		[ "/Users/Anita/untitled/src/saquestion.cpp", "MU", null ]
+		[ "/Users/Anita/untitled/src/menus/addquestionmenu.cpp", "MU", null ],
+		[ "/Users/Anita/untitled/src/menus/main.cpp", "MU", null ],
+		[ "/Users/Anita/untitled/src/menus/mainmenu.cpp", "MU", null ],
+		[ "/Users/Anita/untitled/src/menus/managequestionsmenu.cpp", "MU", null ],
+		[ "/Users/Anita/untitled/src/menus/optionsmenu.cpp", "MU", null ],
+		[ "/Users/Anita/untitled/src/menus/questionbank.cpp", "MU", null ],
+		[ "/Users/Anita/untitled/src/questions/mcquestion.cpp", "MU", null ],
+		[ "/Users/Anita/untitled/src/questions/question.cpp", "MU", null ],
+		[ "/Users/Anita/untitled/src/questions/saquestion.cpp", "MU", null ],
+		[ "/Users/Anita/untitled/src/questions/tfquestion.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

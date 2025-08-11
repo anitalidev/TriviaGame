@@ -1257,18 +1257,26 @@ untitled_autogen/timestamp: \
 	/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/untitled_autogen/moc_predefs.h \
 	/Users/Anita/untitled/src/game.cpp \
 	/Users/Anita/untitled/src/game.h \
-	/Users/Anita/untitled/src/main.cpp \
-	/Users/Anita/untitled/src/mainmenu.cpp \
-	/Users/Anita/untitled/src/mainmenu.h \
 	/Users/Anita/untitled/src/mainwindow.cpp \
 	/Users/Anita/untitled/src/mainwindow.h \
-	/Users/Anita/untitled/src/mcquestion.cpp \
-	/Users/Anita/untitled/src/mcquestion.h \
-	/Users/Anita/untitled/src/optionsmenu.cpp \
-	/Users/Anita/untitled/src/optionsmenu.h \
-	/Users/Anita/untitled/src/question.cpp \
-	/Users/Anita/untitled/src/question.h \
-	/Users/Anita/untitled/src/saquestion.cpp \
-	/Users/Anita/untitled/src/saquestion.h \
+	/Users/Anita/untitled/src/menus/addquestionmenu.cpp \
+	/Users/Anita/untitled/src/menus/addquestionmenu.h \
+	/Users/Anita/untitled/src/menus/main.cpp \
+	/Users/Anita/untitled/src/menus/mainmenu.cpp \
+	/Users/Anita/untitled/src/menus/mainmenu.h \
+	/Users/Anita/untitled/src/menus/managequestionsmenu.cpp \
+	/Users/Anita/untitled/src/menus/managequestionsmenu.h \
+	/Users/Anita/untitled/src/menus/optionsmenu.cpp \
+	/Users/Anita/untitled/src/menus/optionsmenu.h \
+	/Users/Anita/untitled/src/menus/questionbank.cpp \
+	/Users/Anita/untitled/src/menus/questionbank.h \
+	/Users/Anita/untitled/src/questions/mcquestion.cpp \
+	/Users/Anita/untitled/src/questions/mcquestion.h \
+	/Users/Anita/untitled/src/questions/question.cpp \
+	/Users/Anita/untitled/src/questions/question.h \
+	/Users/Anita/untitled/src/questions/saquestion.cpp \
+	/Users/Anita/untitled/src/questions/saquestion.h \
+	/Users/Anita/untitled/src/questions/tfquestion.cpp \
+	/Users/Anita/untitled/src/questions/tfquestion.h \
 	/Users/Anita/untitled/src/mainwindow.ui \
 	/Users/Anita/Qt/Tools/CMake/CMake.app/Contents/bin/cmake

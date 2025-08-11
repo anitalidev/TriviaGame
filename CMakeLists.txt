@@ -3,24 +3,32 @@ project(untitled LANGUAGES CXX)
 
 find_package(Qt6 6.5 REQUIRED COMPONENTS Core Widgets)
 
-qt_standard_project_setup()  # sets AUTOMOC/AUTOUIC/AUTORCC ON
+qt_standard_project_setup()
 
-qt_add_executable(untitled
-    WIN32 MACOSX_BUNDLE
-    src/main.cpp
-    src/mainwindow.cpp
-    src/mainwindow.h
-    src/mainwindow.ui
-    src/question.h
-    src/question.cpp
-    src/mcquestion.h src/mcquestion.cpp
-    src/saquestion.h src/saquestion.cpp
-    src/mainmenu.h src/mainmenu.cpp
-    src/game.h src/game.cpp
-    src/optionsmenu.h src/optionsmenu.cpp
+file(GLOB_RECURSE APP_SOURCES CONFIGURE_DEPENDS
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/*.h"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/*.ui"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/*.qrc"
 )
 
-target_link_libraries(untitled PRIVATE Qt6::Core Qt6::Widgets)
+qt_add_executable(untitled
+    WIN32
+    MACOSX_BUNDLE
+    ${APP_SOURCES}
+)
+
+target_include_directories(untitled PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}/src
+    ${CMAKE_CURRENT_SOURCE_DIR}/ui
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/questions
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/menus
+)
+
+target_link_libraries(untitled PRIVATE
+    Qt6::Core
+    Qt6::Widgets
+)
 
 include(GNUInstallDirs)
 

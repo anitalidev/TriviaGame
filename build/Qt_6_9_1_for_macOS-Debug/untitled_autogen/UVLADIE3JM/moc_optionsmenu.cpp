@@ -40,12 +40,15 @@ template <> constexpr inline auto OptionsMenu::qt_create_metaobjectdata<qt_meta_
     QtMocHelpers::StringRefStorage qt_stringData {
         "OptionsMenu",
         "back",
-        ""
+        "",
+        "manageQuestions"
     };
 
     QtMocHelpers::UintData qt_methods {
         // Signal 'back'
         QtMocHelpers::SignalData<void()>(1, 2, QMC::AccessPublic, QMetaType::Void),
+        // Signal 'manageQuestions'
+        QtMocHelpers::SignalData<void()>(3, 2, QMC::AccessPublic, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -70,11 +73,14 @@ void OptionsMenu::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
         case 0: _t->back(); break;
+        case 1: _t->manageQuestions(); break;
         default: ;
         }
     }
     if (_c == QMetaObject::IndexOfMethod) {
         if (QtMocHelpers::indexOfMethod<void (OptionsMenu::*)()>(_a, &OptionsMenu::back, 0))
+            return;
+        if (QtMocHelpers::indexOfMethod<void (OptionsMenu::*)()>(_a, &OptionsMenu::manageQuestions, 1))
             return;
     }
 }
@@ -98,14 +104,14 @@ int OptionsMenu::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 1)
+        if (_id < 2)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 1;
+        _id -= 2;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 1)
+        if (_id < 2)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 1;
+        _id -= 2;
     }
     return _id;
 }
@@ -114,5 +120,11 @@ int OptionsMenu::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 void OptionsMenu::back()
 {
     QMetaObject::activate(this, &staticMetaObject, 0, nullptr);
+}
+
+// SIGNAL 1
+void OptionsMenu::manageQuestions()
+{
+    QMetaObject::activate(this, &staticMetaObject, 1, nullptr);
 }
 QT_WARNING_POP

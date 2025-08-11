@@ -5,7 +5,7 @@
 #include <QStackedWidget>
 #include <QHash>
 #include <QHashFunctions>
-enum class Page { Menu, Game, Options };
+enum class Page { Menu, Game, Options, ManageQuestions, AddQuestion };
 
 inline uint qHash(Page key, uint seed = 0) noexcept {
     return ::qHash(static_cast<int>(key), seed);

@@ -1,0 +1,10 @@
+#include "questionbank.h"
+
+QuestionBank::QuestionBank(std::vector<std::unique_ptr<Question>> questions) {
+    questions_ = std::move(questions);
+}
+
+
+void QuestionBank::addQuestion(std::unique_ptr<Question> newQuestion) {
+    questions_.push_back(std::move(newQuestion));
+}
