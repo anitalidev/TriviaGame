@@ -1,16 +1,18 @@
 #include "optionsmenu.h"
 
-#include <QVBoxLayout>
+#include <QGridLayout>
 #include <QPushButton>
 
 OptionsMenu::OptionsMenu(QWidget* parent) : QWidget (parent) {
-    // QVBoxLayout* layout = new QVBoxLayout(this);
+
+    QGridLayout* layout = new QGridLayout;
 
     QPushButton* backButton = new QPushButton("Back", this);
 
-    // layout->addWidget(backButton);
+    layout->addWidget(backButton, 0, 0, Qt::AlignLeft | Qt::AlignTop);
 
     connect(backButton, &QPushButton::clicked, this, &OptionsMenu::back);
 
-    // setLayout(layout);
+    setLayout(layout);
+
 }
