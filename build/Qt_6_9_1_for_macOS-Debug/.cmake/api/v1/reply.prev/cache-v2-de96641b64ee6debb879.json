@@ -6443,7 +6443,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/local"
+			"value" : "/tmp"
 		},
 		{
 			"name" : "untitled_BINARY_DIR",

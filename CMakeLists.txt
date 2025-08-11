@@ -3,21 +3,21 @@ project(untitled LANGUAGES CXX)
 
 find_package(Qt6 6.5 REQUIRED COMPONENTS Core Widgets)
 
-qt_standard_project_setup()
+qt_standard_project_setup()  # sets AUTOMOC/AUTOUIC/AUTORCC ON
 
 qt_add_executable(untitled
     WIN32 MACOSX_BUNDLE
-    main.cpp
-    mainwindow.cpp
-    mainwindow.h
-    mainwindow.ui
+    src/main.cpp
+    src/mainwindow.cpp
+    src/mainwindow.h
+    src/mainwindow.ui
+    src/question.h
+    src/question.cpp
+    src/mcquestion.h src/mcquestion.cpp
+    src/saquestion.h src/saquestion.cpp
 )
 
-target_link_libraries(untitled
-    PRIVATE
-        Qt::Core
-        Qt::Widgets
-)
+target_link_libraries(untitled PRIVATE Qt6::Core Qt6::Widgets)
 
 include(GNUInstallDirs)
 

@@ -1,4 +1,4 @@
-/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/untitled_autogen/EWIEGA46WW/moc_mainwindow.cpp: /Users/Anita/untitled/mainwindow.h \
+/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/untitled_autogen/UVLADIE3JM/moc_mainwindow.cpp: /Users/Anita/untitled/src/mainwindow.h \
   /Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/untitled_autogen/moc_predefs.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/Availability.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/AvailabilityInternal.h \
@@ -844,6 +844,8 @@
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/xlocale.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/xlocale/_time.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h \
+  /Users/Anita/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/Headers/QHash \
+  /Users/Anita/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/Headers/QHashFunctions \
   /Users/Anita/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/Headers/q17memory.h \
   /Users/Anita/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/Headers/q20functional.h \
   /Users/Anita/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/Headers/q20iterator.h \
@@ -995,8 +997,11 @@
   /Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Versions/A/Headers/qtransform.h \
   /Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Versions/A/Headers/qwindowdefs.h \
   /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/QMainWindow \
+  /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/QStackedWidget \
+  /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qframe.h \
   /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qmainwindow.h \
   /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qsizepolicy.h \
+  /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qstackedwidget.h \
   /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qtabwidget.h \
   /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qtwidgets-config.h \
   /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qtwidgetsexports.h \
