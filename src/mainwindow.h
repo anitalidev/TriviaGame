@@ -5,8 +5,6 @@
 #include <QStackedWidget>
 #include <QHash>
 #include <QHashFunctions>
-#include <utility>
-
 enum class Page { Menu, Game, Options };
 
 inline uint qHash(Page key, uint seed = 0) noexcept {
@@ -35,6 +33,7 @@ private:
     T* addPage(Page id) {
         T* w = new T(this);
         int idx = stack_->addWidget(w);
+
         pageIndex_.insert(id, idx);
         return w;
     }

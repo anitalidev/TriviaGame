@@ -15,6 +15,9 @@ qt_add_executable(untitled
     src/question.cpp
     src/mcquestion.h src/mcquestion.cpp
     src/saquestion.h src/saquestion.cpp
+    src/mainmenu.h src/mainmenu.cpp
+    src/game.h src/game.cpp
+    src/optionsmenu.h src/optionsmenu.cpp
 )
 
 target_link_libraries(untitled PRIVATE Qt6::Core Qt6::Widgets)
