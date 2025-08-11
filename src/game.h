@@ -1,10 +1,18 @@
 #ifndef GAME_H
 #define GAME_H
 
-class Game
+#include <QWidget>
+
+class Game : public QWidget
 {
+
+    Q_OBJECT
+
 public:
-    Game();
+    explicit Game(QWidget* parent = nullptr);
+
+signals:
+    void back();
 };
 
 #endif // GAME_H

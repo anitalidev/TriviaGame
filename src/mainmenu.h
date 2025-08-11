@@ -12,6 +12,7 @@ public:
 
 signals:
     void start();
+    void options();
 };
 
 

@@ -3,7 +3,7 @@
 
 #include "MainMenu.h"
 #include "Game.h"
-#include "Options.h"
+#include "optionsmenu.h"
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow) {
     ui->setupUi(this);
@@ -13,7 +13,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
 
     MainMenu* menu    = addPage<MainMenu>(Page::Menu);
     Game* game    = addPage<Game>(Page::Game);
-    Options* options = addPage<Options>(Page::Options);
+    OptionsMenu* options = addPage<OptionsMenu>(Page::Options);
 
     connect(menu, &MainMenu::start, this, [this]{
         goTo(Page::Game);
@@ -25,7 +25,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     connect(game, &Game::back, this, [this]{
         goTo(Page::Menu);
     });
-    connect(options, &Options::back, this, [this]{
+    connect(options, &OptionsMenu::back, this, [this]{
         goTo(Page::Menu);
     });
 
