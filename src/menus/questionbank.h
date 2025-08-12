@@ -2,6 +2,9 @@
 #define QUESTIONBANK_H
 
 #include "question.h"
+#include "mcquestion.h"
+#include "saquestion.h"
+#include "tfquestion.h"
 #include <vector>
 #include <memory>
 
@@ -12,6 +15,8 @@ public:
 
     const std::vector<std::unique_ptr<Question>>& getQuestions() const { return questions_; }
     void addQuestion(std::unique_ptr<Question> newQuestion);
+    QStringList toQStringList() const;
+    bool isEmpty() const;
 
 private:
     std::vector<std::unique_ptr<Question>> questions_;

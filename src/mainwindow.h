@@ -5,6 +5,8 @@
 #include <QStackedWidget>
 #include <QHash>
 #include <QHashFunctions>
+#include "questionbank.h"
+
 enum class Page { Menu, Game, Options, ManageQuestions, AddQuestion };
 
 inline uint qHash(Page key, uint seed = 0) noexcept {
@@ -28,6 +30,8 @@ private:
     QStackedWidget* stack_ = nullptr;
 
     QHash<Page, int> pageIndex_;
+
+    QuestionBank* questions_;
 
     template <typename T>
     T* addPage(Page id) {

@@ -10,22 +10,24 @@ ManageQuestionsMenu::ManageQuestionsMenu(QWidget* parent) : QWidget(parent) {
     layout->setSpacing(12);
     layout->setContentsMargins(12, 12, 12, 12);
 
+    QPushButton* backButton = new QPushButton("Back", this);
+    backButton->setFixedSize(80, 30);
+
     questionList_ = new QListWidget(this);
+    layout->addWidget(backButton, 0, Qt::AlignLeft | Qt::AlignTop);
     layout->addWidget(questionList_, 1);
 
     QHBoxLayout* row = new QHBoxLayout();
     QPushButton* addQuestionButton = new QPushButton("Add Question", this);
     removeButton_ = new QPushButton("Remove", this);
-    QPushButton* backButton = new QPushButton("Back", this);
 
     addQuestionButton->setFixedHeight(40);
     removeButton_->setFixedHeight(40);
-    backButton->setFixedHeight(40);
 
-    row->addWidget(backButton);
-    row->addStretch(2);
+    row->addStretch(1);
     row->addWidget(addQuestionButton);
     row->addWidget(removeButton_);
+    row->addStretch(1);
     layout->addLayout(row);
 
     connect(backButton,        &QPushButton::clicked, this, &ManageQuestionsMenu::back);
@@ -39,9 +41,9 @@ ManageQuestionsMenu::ManageQuestionsMenu(QWidget* parent) : QWidget(parent) {
     });
 }
 
-void ManageQuestionsMenu::setQuestions(const QStringList& items) {
+void ManageQuestionsMenu::setQuestions(QuestionBank& items) {
     questionList_->clear();
-    questionList_->addItems(items);
+    questionList_->addItems(items.toQStringList());
 
     removeButton_->setEnabled(!items.isEmpty());
 }

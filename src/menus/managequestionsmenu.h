@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include <QStringList>
+#include "questionbank.h"
 
 class QListWidget;
 class QPushButton;
@@ -13,7 +14,7 @@ class ManageQuestionsMenu : public QWidget {
 public:
     explicit ManageQuestionsMenu(QWidget* parent = nullptr);
 
-    void setQuestions(const QStringList& items);
+    void setQuestions(QuestionBank& items);
 
 signals:
     void back();

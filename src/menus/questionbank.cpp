@@ -8,3 +8,15 @@ QuestionBank::QuestionBank(std::vector<std::unique_ptr<Question>> questions) {
 void QuestionBank::addQuestion(std::unique_ptr<Question> newQuestion) {
     questions_.push_back(std::move(newQuestion));
 }
+
+QStringList QuestionBank::toQStringList() const {
+    QStringList list;
+    for (const auto& q : questions_) {
+        list << q->getQuestion(); // assuming getText() returns QString
+    }
+    return list;
+}
+
+bool QuestionBank::isEmpty() const {
+    return questions_.empty();
+}

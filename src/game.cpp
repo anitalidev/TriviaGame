@@ -8,6 +8,7 @@ Game::Game(QWidget* parent) : QWidget(parent) {
     QGridLayout* layout = new QGridLayout(this);
 
     QPushButton* backButton = new QPushButton("Back", this);
+    backButton->setFixedSize(80, 30);
 
     layout->addWidget(backButton, 0, 0, Qt::AlignLeft | Qt::AlignTop);
 
