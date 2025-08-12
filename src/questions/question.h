@@ -1,7 +1,7 @@
 #ifndef QUESTION_H
 #define QUESTION_H
 
-#include <string>
+#include <QString>
 
 
 class Question
@@ -9,8 +9,8 @@ class Question
 public:
     virtual ~Question() = default;
 
-    virtual std::string getQuestion() const = 0;
-    virtual std::string getAnswer() const = 0;
+    virtual QString getQuestion() const = 0;
+    virtual QString getAnswer() const = 0;
 
 private:
 };
