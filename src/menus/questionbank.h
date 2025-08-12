@@ -17,6 +17,7 @@ public:
     void addQuestion(std::unique_ptr<Question> newQuestion);
     QStringList toQStringList() const;
     bool isEmpty() const;
+    void removeQuestion(std::size_t index);
 
 private:
     std::vector<std::unique_ptr<Question>> questions_;

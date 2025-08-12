@@ -9,10 +9,16 @@ void QuestionBank::addQuestion(std::unique_ptr<Question> newQuestion) {
     questions_.push_back(std::move(newQuestion));
 }
 
+void QuestionBank::removeQuestion(std::size_t index) {
+    if (index < questions_.size()) {
+        questions_.erase(questions_.begin() + index);
+    }
+}
+
 QStringList QuestionBank::toQStringList() const {
     QStringList list;
     for (const auto& q : questions_) {
-        list << q->getQuestion(); // assuming getText() returns QString
+        list << q->getQuestion();
     }
     return list;
 }

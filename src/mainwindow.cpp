@@ -74,7 +74,8 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     });
 
     connect(manageQuestions, &ManageQuestionsMenu::remove, this, [this, manageQuestions](int idx){
-        // TODO
+        questions_->removeQuestion(idx);
+        manageQuestions->setQuestions(*questions_);
     });
 
 
