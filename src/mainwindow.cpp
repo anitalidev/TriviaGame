@@ -11,6 +11,7 @@
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow) {
     questions_ = new QuestionBank(std::vector<std::unique_ptr<Question>>());
     addSampleQuestions(*questions_); // FOR TESTING ONLY
+    g_settings.questions = questions_;
 
     ui->setupUi(this);
 
@@ -86,7 +87,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     });
 
     // User would like to start the game
-    connect(gameOptions, &GameOptionsMenu::start, this, [this]() {
+    connect(gameOptions, &GameOptionsMenu::startRequested, this, [this]() {
         goTo(Page::Game);
     });
 

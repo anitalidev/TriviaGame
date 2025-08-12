@@ -1,18 +1,20 @@
-#ifndef GAME_H
-#define GAME_H
+#ifndef GAMEOPTIONSMENU_H
+#define GAMEOPTIONSMENU_H
 
 #include <QWidget>
+#include "gamesettings.h"
 
-class Game : public QWidget
+class GameOptionsMenu : public QWidget
 {
 
     Q_OBJECT
 
 public:
-    explicit Game(QWidget* parent = nullptr);
+    explicit GameOptionsMenu(QWidget* parent = nullptr);
 
 signals:
     void back();
+    void startRequested();
 };
 
-#endif // GAME_H
+#endif // GAMEOPTIONSMENU_H

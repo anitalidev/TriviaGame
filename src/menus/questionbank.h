@@ -19,8 +19,16 @@ public:
     bool isEmpty() const;
     void removeQuestion(std::size_t index);
 
+    void setUp(bool shuffle);
+    bool questionsComplete();
+    Question* nextQuestion();
+
+
 private:
     std::vector<std::unique_ptr<Question>> questions_;
+    int index_;
+    int count_;
+    bool shuffle_;
 };
 
 #endif // QUESTIONBANK_H

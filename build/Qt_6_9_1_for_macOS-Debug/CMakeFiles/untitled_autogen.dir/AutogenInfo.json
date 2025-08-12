@@ -385,9 +385,21 @@
 	"HEADERS" : 
 	[
 		[
-			"/Users/Anita/untitled/src/game.h",
+			"/Users/Anita/untitled/src/game/game.h",
 			"MU",
-			"UVLADIE3JM/moc_game.cpp",
+			"L256WXPHEP/moc_game.cpp",
+			null
+		],
+		[
+			"/Users/Anita/untitled/src/game/gameoptionsmenu.h",
+			"MU",
+			"L256WXPHEP/moc_gameoptionsmenu.cpp",
+			null
+		],
+		[
+			"/Users/Anita/untitled/src/game/gamesettings.h",
+			"MU",
+			"L256WXPHEP/moc_gamesettings.cpp",
 			null
 		],
 		[
@@ -468,6 +480,7 @@
 		"/Users/Anita/untitled/ui",
 		"/Users/Anita/untitled/src/questions",
 		"/Users/Anita/untitled/src/menus",
+		"/Users/Anita/untitled/src/game",
 		"/Users/Anita/Qt/6.9.1/macos/lib/QtCore.framework/Headers",
 		"/Users/Anita/Qt/6.9.1/macos/lib/QtCore.framework",
 		"/Users/Anita/Qt/6.9.1/macos/mkspecs/macx-clang",
@@ -513,7 +526,9 @@
 	"SETTINGS_FILE" : "/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/CMakeFiles/untitled_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[ "/Users/Anita/untitled/src/game.cpp", "MU", null ],
+		[ "/Users/Anita/untitled/src/game/game.cpp", "MU", null ],
+		[ "/Users/Anita/untitled/src/game/gameoptionsmenu.cpp", "MU", null ],
+		[ "/Users/Anita/untitled/src/game/gamesettings.cpp", "MU", null ],
 		[ "/Users/Anita/untitled/src/mainwindow.cpp", "MU", null ],
 		[ "/Users/Anita/untitled/src/menus/addquestionmenu.cpp", "MU", null ],
 		[ "/Users/Anita/untitled/src/menus/main.cpp", "MU", null ],

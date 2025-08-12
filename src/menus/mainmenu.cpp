@@ -9,7 +9,7 @@ MainMenu::MainMenu(QWidget* parent) : QWidget(parent)
     layout->addStretch(1);
     layout->setSpacing(15);
 
-    QPushButton* startButton = new QPushButton("Start Game", this);
+    QPushButton* startButton = new QPushButton("Play Game", this);
     QPushButton* optionsButton = new QPushButton("Options", this);
 
     startButton->setFixedHeight(80);

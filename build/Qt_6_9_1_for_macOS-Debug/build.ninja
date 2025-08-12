@@ -53,23 +53,39 @@ build CMakeFiles/untitled.dir/untitled_autogen/mocs_compilation.cpp.o: CXX_COMPI
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles/untitled.dir/untitled_autogen/mocs_compilation.cpp.o.d
   FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.3 -fcolor-diagnostics
-  INCLUDES = -I/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/untitled_autogen/include -I/Users/Anita/untitled/src -I/Users/Anita/untitled/ui -I/Users/Anita/untitled/src/questions -I/Users/Anita/untitled/src/menus -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtCore.framework/Headers -iframework /Users/Anita/Qt/6.9.1/macos/lib -isystem /Users/Anita/Qt/6.9.1/macos/mkspecs/macx-clang -isystem /Users/Anita/Qt/6.9.1/macos/include -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Headers -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Headers
+  INCLUDES = -I/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/untitled_autogen/include -I/Users/Anita/untitled/src -I/Users/Anita/untitled/ui -I/Users/Anita/untitled/src/questions -I/Users/Anita/untitled/src/menus -I/Users/Anita/untitled/src/game -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtCore.framework/Headers -iframework /Users/Anita/Qt/6.9.1/macos/lib -isystem /Users/Anita/Qt/6.9.1/macos/mkspecs/macx-clang -isystem /Users/Anita/Qt/6.9.1/macos/include -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Headers -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Headers
   OBJECT_DIR = CMakeFiles/untitled.dir
   OBJECT_FILE_DIR = CMakeFiles/untitled.dir/untitled_autogen
 
-build CMakeFiles/untitled.dir/src/game.cpp.o: CXX_COMPILER__untitled_unscanned_Debug /Users/Anita/untitled/src/game.cpp || cmake_object_order_depends_target_untitled
+build CMakeFiles/untitled.dir/src/game/game.cpp.o: CXX_COMPILER__untitled_unscanned_Debug /Users/Anita/untitled/src/game/game.cpp || cmake_object_order_depends_target_untitled
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
-  DEP_FILE = CMakeFiles/untitled.dir/src/game.cpp.o.d
+  DEP_FILE = CMakeFiles/untitled.dir/src/game/game.cpp.o.d
   FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.3 -fcolor-diagnostics
-  INCLUDES = -I/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/untitled_autogen/include -I/Users/Anita/untitled/src -I/Users/Anita/untitled/ui -I/Users/Anita/untitled/src/questions -I/Users/Anita/untitled/src/menus -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtCore.framework/Headers -iframework /Users/Anita/Qt/6.9.1/macos/lib -isystem /Users/Anita/Qt/6.9.1/macos/mkspecs/macx-clang -isystem /Users/Anita/Qt/6.9.1/macos/include -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Headers -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Headers
+  INCLUDES = -I/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/untitled_autogen/include -I/Users/Anita/untitled/src -I/Users/Anita/untitled/ui -I/Users/Anita/untitled/src/questions -I/Users/Anita/untitled/src/menus -I/Users/Anita/untitled/src/game -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtCore.framework/Headers -iframework /Users/Anita/Qt/6.9.1/macos/lib -isystem /Users/Anita/Qt/6.9.1/macos/mkspecs/macx-clang -isystem /Users/Anita/Qt/6.9.1/macos/include -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Headers -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Headers
   OBJECT_DIR = CMakeFiles/untitled.dir
-  OBJECT_FILE_DIR = CMakeFiles/untitled.dir/src
+  OBJECT_FILE_DIR = CMakeFiles/untitled.dir/src/game
+
+build CMakeFiles/untitled.dir/src/game/gameoptionsmenu.cpp.o: CXX_COMPILER__untitled_unscanned_Debug /Users/Anita/untitled/src/game/gameoptionsmenu.cpp || cmake_object_order_depends_target_untitled
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = CMakeFiles/untitled.dir/src/game/gameoptionsmenu.cpp.o.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.3 -fcolor-diagnostics
+  INCLUDES = -I/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/untitled_autogen/include -I/Users/Anita/untitled/src -I/Users/Anita/untitled/ui -I/Users/Anita/untitled/src/questions -I/Users/Anita/untitled/src/menus -I/Users/Anita/untitled/src/game -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtCore.framework/Headers -iframework /Users/Anita/Qt/6.9.1/macos/lib -isystem /Users/Anita/Qt/6.9.1/macos/mkspecs/macx-clang -isystem /Users/Anita/Qt/6.9.1/macos/include -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Headers -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Headers
+  OBJECT_DIR = CMakeFiles/untitled.dir
+  OBJECT_FILE_DIR = CMakeFiles/untitled.dir/src/game
+
+build CMakeFiles/untitled.dir/src/game/gamesettings.cpp.o: CXX_COMPILER__untitled_unscanned_Debug /Users/Anita/untitled/src/game/gamesettings.cpp || cmake_object_order_depends_target_untitled
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = CMakeFiles/untitled.dir/src/game/gamesettings.cpp.o.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.3 -fcolor-diagnostics
+  INCLUDES = -I/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/untitled_autogen/include -I/Users/Anita/untitled/src -I/Users/Anita/untitled/ui -I/Users/Anita/untitled/src/questions -I/Users/Anita/untitled/src/menus -I/Users/Anita/untitled/src/game -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtCore.framework/Headers -iframework /Users/Anita/Qt/6.9.1/macos/lib -isystem /Users/Anita/Qt/6.9.1/macos/mkspecs/macx-clang -isystem /Users/Anita/Qt/6.9.1/macos/include -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Headers -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Headers
+  OBJECT_DIR = CMakeFiles/untitled.dir
+  OBJECT_FILE_DIR = CMakeFiles/untitled.dir/src/game
 
 build CMakeFiles/untitled.dir/src/mainwindow.cpp.o: CXX_COMPILER__untitled_unscanned_Debug /Users/Anita/untitled/src/mainwindow.cpp || cmake_object_order_depends_target_untitled
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles/untitled.dir/src/mainwindow.cpp.o.d
   FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.3 -fcolor-diagnostics
-  INCLUDES = -I/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/untitled_autogen/include -I/Users/Anita/untitled/src -I/Users/Anita/untitled/ui -I/Users/Anita/untitled/src/questions -I/Users/Anita/untitled/src/menus -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtCore.framework/Headers -iframework /Users/Anita/Qt/6.9.1/macos/lib -isystem /Users/Anita/Qt/6.9.1/macos/mkspecs/macx-clang -isystem /Users/Anita/Qt/6.9.1/macos/include -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Headers -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Headers
+  INCLUDES = -I/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/untitled_autogen/include -I/Users/Anita/untitled/src -I/Users/Anita/untitled/ui -I/Users/Anita/untitled/src/questions -I/Users/Anita/untitled/src/menus -I/Users/Anita/untitled/src/game -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtCore.framework/Headers -iframework /Users/Anita/Qt/6.9.1/macos/lib -isystem /Users/Anita/Qt/6.9.1/macos/mkspecs/macx-clang -isystem /Users/Anita/Qt/6.9.1/macos/include -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Headers -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Headers
   OBJECT_DIR = CMakeFiles/untitled.dir
   OBJECT_FILE_DIR = CMakeFiles/untitled.dir/src
 
@@ -77,7 +93,7 @@ build CMakeFiles/untitled.dir/src/menus/addquestionmenu.cpp.o: CXX_COMPILER__unt
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles/untitled.dir/src/menus/addquestionmenu.cpp.o.d
   FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.3 -fcolor-diagnostics
-  INCLUDES = -I/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/untitled_autogen/include -I/Users/Anita/untitled/src -I/Users/Anita/untitled/ui -I/Users/Anita/untitled/src/questions -I/Users/Anita/untitled/src/menus -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtCore.framework/Headers -iframework /Users/Anita/Qt/6.9.1/macos/lib -isystem /Users/Anita/Qt/6.9.1/macos/mkspecs/macx-clang -isystem /Users/Anita/Qt/6.9.1/macos/include -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Headers -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Headers
+  INCLUDES = -I/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/untitled_autogen/include -I/Users/Anita/untitled/src -I/Users/Anita/untitled/ui -I/Users/Anita/untitled/src/questions -I/Users/Anita/untitled/src/menus -I/Users/Anita/untitled/src/game -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtCore.framework/Headers -iframework /Users/Anita/Qt/6.9.1/macos/lib -isystem /Users/Anita/Qt/6.9.1/macos/mkspecs/macx-clang -isystem /Users/Anita/Qt/6.9.1/macos/include -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Headers -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Headers
   OBJECT_DIR = CMakeFiles/untitled.dir
   OBJECT_FILE_DIR = CMakeFiles/untitled.dir/src/menus
 
@@ -85,7 +101,7 @@ build CMakeFiles/untitled.dir/src/menus/main.cpp.o: CXX_COMPILER__untitled_unsca
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles/untitled.dir/src/menus/main.cpp.o.d
   FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.3 -fcolor-diagnostics
-  INCLUDES = -I/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/untitled_autogen/include -I/Users/Anita/untitled/src -I/Users/Anita/untitled/ui -I/Users/Anita/untitled/src/questions -I/Users/Anita/untitled/src/menus -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtCore.framework/Headers -iframework /Users/Anita/Qt/6.9.1/macos/lib -isystem /Users/Anita/Qt/6.9.1/macos/mkspecs/macx-clang -isystem /Users/Anita/Qt/6.9.1/macos/include -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Headers -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Headers
+  INCLUDES = -I/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/untitled_autogen/include -I/Users/Anita/untitled/src -I/Users/Anita/untitled/ui -I/Users/Anita/untitled/src/questions -I/Users/Anita/untitled/src/menus -I/Users/Anita/untitled/src/game -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtCore.framework/Headers -iframework /Users/Anita/Qt/6.9.1/macos/lib -isystem /Users/Anita/Qt/6.9.1/macos/mkspecs/macx-clang -isystem /Users/Anita/Qt/6.9.1/macos/include -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Headers -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Headers
   OBJECT_DIR = CMakeFiles/untitled.dir
   OBJECT_FILE_DIR = CMakeFiles/untitled.dir/src/menus
 
@@ -93,7 +109,7 @@ build CMakeFiles/untitled.dir/src/menus/mainmenu.cpp.o: CXX_COMPILER__untitled_u
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles/untitled.dir/src/menus/mainmenu.cpp.o.d
   FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.3 -fcolor-diagnostics
-  INCLUDES = -I/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/untitled_autogen/include -I/Users/Anita/untitled/src -I/Users/Anita/untitled/ui -I/Users/Anita/untitled/src/questions -I/Users/Anita/untitled/src/menus -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtCore.framework/Headers -iframework /Users/Anita/Qt/6.9.1/macos/lib -isystem /Users/Anita/Qt/6.9.1/macos/mkspecs/macx-clang -isystem /Users/Anita/Qt/6.9.1/macos/include -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Headers -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Headers
+  INCLUDES = -I/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/untitled_autogen/include -I/Users/Anita/untitled/src -I/Users/Anita/untitled/ui -I/Users/Anita/untitled/src/questions -I/Users/Anita/untitled/src/menus -I/Users/Anita/untitled/src/game -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtCore.framework/Headers -iframework /Users/Anita/Qt/6.9.1/macos/lib -isystem /Users/Anita/Qt/6.9.1/macos/mkspecs/macx-clang -isystem /Users/Anita/Qt/6.9.1/macos/include -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Headers -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Headers
   OBJECT_DIR = CMakeFiles/untitled.dir
   OBJECT_FILE_DIR = CMakeFiles/untitled.dir/src/menus
 
@@ -101,7 +117,7 @@ build CMakeFiles/untitled.dir/src/menus/managequestionsmenu.cpp.o: CXX_COMPILER_
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles/untitled.dir/src/menus/managequestionsmenu.cpp.o.d
   FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.3 -fcolor-diagnostics
-  INCLUDES = -I/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/untitled_autogen/include -I/Users/Anita/untitled/src -I/Users/Anita/untitled/ui -I/Users/Anita/untitled/src/questions -I/Users/Anita/untitled/src/menus -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtCore.framework/Headers -iframework /Users/Anita/Qt/6.9.1/macos/lib -isystem /Users/Anita/Qt/6.9.1/macos/mkspecs/macx-clang -isystem /Users/Anita/Qt/6.9.1/macos/include -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Headers -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Headers
+  INCLUDES = -I/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/untitled_autogen/include -I/Users/Anita/untitled/src -I/Users/Anita/untitled/ui -I/Users/Anita/untitled/src/questions -I/Users/Anita/untitled/src/menus -I/Users/Anita/untitled/src/game -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtCore.framework/Headers -iframework /Users/Anita/Qt/6.9.1/macos/lib -isystem /Users/Anita/Qt/6.9.1/macos/mkspecs/macx-clang -isystem /Users/Anita/Qt/6.9.1/macos/include -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Headers -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Headers
   OBJECT_DIR = CMakeFiles/untitled.dir
   OBJECT_FILE_DIR = CMakeFiles/untitled.dir/src/menus
 
@@ -109,7 +125,7 @@ build CMakeFiles/untitled.dir/src/menus/optionsmenu.cpp.o: CXX_COMPILER__untitle
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles/untitled.dir/src/menus/optionsmenu.cpp.o.d
   FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.3 -fcolor-diagnostics
-  INCLUDES = -I/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/untitled_autogen/include -I/Users/Anita/untitled/src -I/Users/Anita/untitled/ui -I/Users/Anita/untitled/src/questions -I/Users/Anita/untitled/src/menus -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtCore.framework/Headers -iframework /Users/Anita/Qt/6.9.1/macos/lib -isystem /Users/Anita/Qt/6.9.1/macos/mkspecs/macx-clang -isystem /Users/Anita/Qt/6.9.1/macos/include -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Headers -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Headers
+  INCLUDES = -I/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/untitled_autogen/include -I/Users/Anita/untitled/src -I/Users/Anita/untitled/ui -I/Users/Anita/untitled/src/questions -I/Users/Anita/untitled/src/menus -I/Users/Anita/untitled/src/game -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtCore.framework/Headers -iframework /Users/Anita/Qt/6.9.1/macos/lib -isystem /Users/Anita/Qt/6.9.1/macos/mkspecs/macx-clang -isystem /Users/Anita/Qt/6.9.1/macos/include -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Headers -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Headers
   OBJECT_DIR = CMakeFiles/untitled.dir
   OBJECT_FILE_DIR = CMakeFiles/untitled.dir/src/menus
 
@@ -117,7 +133,7 @@ build CMakeFiles/untitled.dir/src/menus/questionbank.cpp.o: CXX_COMPILER__untitl
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles/untitled.dir/src/menus/questionbank.cpp.o.d
   FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.3 -fcolor-diagnostics
-  INCLUDES = -I/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/untitled_autogen/include -I/Users/Anita/untitled/src -I/Users/Anita/untitled/ui -I/Users/Anita/untitled/src/questions -I/Users/Anita/untitled/src/menus -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtCore.framework/Headers -iframework /Users/Anita/Qt/6.9.1/macos/lib -isystem /Users/Anita/Qt/6.9.1/macos/mkspecs/macx-clang -isystem /Users/Anita/Qt/6.9.1/macos/include -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Headers -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Headers
+  INCLUDES = -I/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/untitled_autogen/include -I/Users/Anita/untitled/src -I/Users/Anita/untitled/ui -I/Users/Anita/untitled/src/questions -I/Users/Anita/untitled/src/menus -I/Users/Anita/untitled/src/game -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtCore.framework/Headers -iframework /Users/Anita/Qt/6.9.1/macos/lib -isystem /Users/Anita/Qt/6.9.1/macos/mkspecs/macx-clang -isystem /Users/Anita/Qt/6.9.1/macos/include -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Headers -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Headers
   OBJECT_DIR = CMakeFiles/untitled.dir
   OBJECT_FILE_DIR = CMakeFiles/untitled.dir/src/menus
 
@@ -125,7 +141,7 @@ build CMakeFiles/untitled.dir/src/questions/mcquestion.cpp.o: CXX_COMPILER__unti
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles/untitled.dir/src/questions/mcquestion.cpp.o.d
   FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.3 -fcolor-diagnostics
-  INCLUDES = -I/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/untitled_autogen/include -I/Users/Anita/untitled/src -I/Users/Anita/untitled/ui -I/Users/Anita/untitled/src/questions -I/Users/Anita/untitled/src/menus -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtCore.framework/Headers -iframework /Users/Anita/Qt/6.9.1/macos/lib -isystem /Users/Anita/Qt/6.9.1/macos/mkspecs/macx-clang -isystem /Users/Anita/Qt/6.9.1/macos/include -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Headers -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Headers
+  INCLUDES = -I/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/untitled_autogen/include -I/Users/Anita/untitled/src -I/Users/Anita/untitled/ui -I/Users/Anita/untitled/src/questions -I/Users/Anita/untitled/src/menus -I/Users/Anita/untitled/src/game -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtCore.framework/Headers -iframework /Users/Anita/Qt/6.9.1/macos/lib -isystem /Users/Anita/Qt/6.9.1/macos/mkspecs/macx-clang -isystem /Users/Anita/Qt/6.9.1/macos/include -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Headers -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Headers
   OBJECT_DIR = CMakeFiles/untitled.dir
   OBJECT_FILE_DIR = CMakeFiles/untitled.dir/src/questions
 
@@ -133,7 +149,7 @@ build CMakeFiles/untitled.dir/src/questions/question.cpp.o: CXX_COMPILER__untitl
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles/untitled.dir/src/questions/question.cpp.o.d
   FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.3 -fcolor-diagnostics
-  INCLUDES = -I/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/untitled_autogen/include -I/Users/Anita/untitled/src -I/Users/Anita/untitled/ui -I/Users/Anita/untitled/src/questions -I/Users/Anita/untitled/src/menus -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtCore.framework/Headers -iframework /Users/Anita/Qt/6.9.1/macos/lib -isystem /Users/Anita/Qt/6.9.1/macos/mkspecs/macx-clang -isystem /Users/Anita/Qt/6.9.1/macos/include -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Headers -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Headers
+  INCLUDES = -I/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/untitled_autogen/include -I/Users/Anita/untitled/src -I/Users/Anita/untitled/ui -I/Users/Anita/untitled/src/questions -I/Users/Anita/untitled/src/menus -I/Users/Anita/untitled/src/game -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtCore.framework/Headers -iframework /Users/Anita/Qt/6.9.1/macos/lib -isystem /Users/Anita/Qt/6.9.1/macos/mkspecs/macx-clang -isystem /Users/Anita/Qt/6.9.1/macos/include -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Headers -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Headers
   OBJECT_DIR = CMakeFiles/untitled.dir
   OBJECT_FILE_DIR = CMakeFiles/untitled.dir/src/questions
 
@@ -141,7 +157,7 @@ build CMakeFiles/untitled.dir/src/questions/saquestion.cpp.o: CXX_COMPILER__unti
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles/untitled.dir/src/questions/saquestion.cpp.o.d
   FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.3 -fcolor-diagnostics
-  INCLUDES = -I/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/untitled_autogen/include -I/Users/Anita/untitled/src -I/Users/Anita/untitled/ui -I/Users/Anita/untitled/src/questions -I/Users/Anita/untitled/src/menus -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtCore.framework/Headers -iframework /Users/Anita/Qt/6.9.1/macos/lib -isystem /Users/Anita/Qt/6.9.1/macos/mkspecs/macx-clang -isystem /Users/Anita/Qt/6.9.1/macos/include -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Headers -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Headers
+  INCLUDES = -I/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/untitled_autogen/include -I/Users/Anita/untitled/src -I/Users/Anita/untitled/ui -I/Users/Anita/untitled/src/questions -I/Users/Anita/untitled/src/menus -I/Users/Anita/untitled/src/game -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtCore.framework/Headers -iframework /Users/Anita/Qt/6.9.1/macos/lib -isystem /Users/Anita/Qt/6.9.1/macos/mkspecs/macx-clang -isystem /Users/Anita/Qt/6.9.1/macos/include -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Headers -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Headers
   OBJECT_DIR = CMakeFiles/untitled.dir
   OBJECT_FILE_DIR = CMakeFiles/untitled.dir/src/questions
 
@@ -149,7 +165,7 @@ build CMakeFiles/untitled.dir/src/questions/tfquestion.cpp.o: CXX_COMPILER__unti
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles/untitled.dir/src/questions/tfquestion.cpp.o.d
   FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.3 -fcolor-diagnostics
-  INCLUDES = -I/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/untitled_autogen/include -I/Users/Anita/untitled/src -I/Users/Anita/untitled/ui -I/Users/Anita/untitled/src/questions -I/Users/Anita/untitled/src/menus -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtCore.framework/Headers -iframework /Users/Anita/Qt/6.9.1/macos/lib -isystem /Users/Anita/Qt/6.9.1/macos/mkspecs/macx-clang -isystem /Users/Anita/Qt/6.9.1/macos/include -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Headers -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Headers
+  INCLUDES = -I/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/untitled_autogen/include -I/Users/Anita/untitled/src -I/Users/Anita/untitled/ui -I/Users/Anita/untitled/src/questions -I/Users/Anita/untitled/src/menus -I/Users/Anita/untitled/src/game -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtCore.framework/Headers -iframework /Users/Anita/Qt/6.9.1/macos/lib -isystem /Users/Anita/Qt/6.9.1/macos/mkspecs/macx-clang -isystem /Users/Anita/Qt/6.9.1/macos/include -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Headers -isystem /Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Headers
   OBJECT_DIR = CMakeFiles/untitled.dir
   OBJECT_FILE_DIR = CMakeFiles/untitled.dir/src/questions
 
@@ -161,7 +177,7 @@ build CMakeFiles/untitled.dir/src/questions/tfquestion.cpp.o: CXX_COMPILER__unti
 #############################################
 # Link the executable untitled.app/Contents/MacOS/untitled
 
-build untitled.app/Contents/MacOS/untitled: CXX_EXECUTABLE_LINKER__untitled_Debug CMakeFiles/untitled.dir/untitled_autogen/mocs_compilation.cpp.o CMakeFiles/untitled.dir/src/game.cpp.o CMakeFiles/untitled.dir/src/mainwindow.cpp.o CMakeFiles/untitled.dir/src/menus/addquestionmenu.cpp.o CMakeFiles/untitled.dir/src/menus/main.cpp.o CMakeFiles/untitled.dir/src/menus/mainmenu.cpp.o CMakeFiles/untitled.dir/src/menus/managequestionsmenu.cpp.o CMakeFiles/untitled.dir/src/menus/optionsmenu.cpp.o CMakeFiles/untitled.dir/src/menus/questionbank.cpp.o CMakeFiles/untitled.dir/src/questions/mcquestion.cpp.o CMakeFiles/untitled.dir/src/questions/question.cpp.o CMakeFiles/untitled.dir/src/questions/saquestion.cpp.o CMakeFiles/untitled.dir/src/questions/tfquestion.cpp.o | /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/QtWidgets /Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Versions/A/QtGui /Users/Anita/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/QtCore || untitled_autogen untitled_autogen_timestamp_deps
+build untitled.app/Contents/MacOS/untitled: CXX_EXECUTABLE_LINKER__untitled_Debug CMakeFiles/untitled.dir/untitled_autogen/mocs_compilation.cpp.o CMakeFiles/untitled.dir/src/game/game.cpp.o CMakeFiles/untitled.dir/src/game/gameoptionsmenu.cpp.o CMakeFiles/untitled.dir/src/game/gamesettings.cpp.o CMakeFiles/untitled.dir/src/mainwindow.cpp.o CMakeFiles/untitled.dir/src/menus/addquestionmenu.cpp.o CMakeFiles/untitled.dir/src/menus/main.cpp.o CMakeFiles/untitled.dir/src/menus/mainmenu.cpp.o CMakeFiles/untitled.dir/src/menus/managequestionsmenu.cpp.o CMakeFiles/untitled.dir/src/menus/optionsmenu.cpp.o CMakeFiles/untitled.dir/src/menus/questionbank.cpp.o CMakeFiles/untitled.dir/src/questions/mcquestion.cpp.o CMakeFiles/untitled.dir/src/questions/question.cpp.o CMakeFiles/untitled.dir/src/questions/saquestion.cpp.o CMakeFiles/untitled.dir/src/questions/tfquestion.cpp.o | /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/QtWidgets /Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Versions/A/QtGui /Users/Anita/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/QtCore || untitled_autogen untitled_autogen_timestamp_deps
   FLAGS = -DQT_QML_DEBUG -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.3
   LINK_LIBRARIES = -Wl,-rpath,/Users/Anita/Qt/6.9.1/macos/lib  /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/QtWidgets  /Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Versions/A/QtGui  -framework AGL  -framework AppKit  -framework OpenGL  -framework ImageIO  -framework Metal  /Users/Anita/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/QtCore  -framework IOKit  -framework DiskArbitration  -framework UniformTypeIdentifiers
   LINK_PATH = -F/Users/Anita/Qt/6.9.1/macos/lib

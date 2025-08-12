@@ -5,7 +5,9 @@ cmake_policy(SET CMP0009 NEW)
 # APP_SOURCES at CMakeLists.txt:8 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/Users/Anita/untitled/src/*.cpp")
 set(OLD_GLOB
-  "/Users/Anita/untitled/src/game.cpp"
+  "/Users/Anita/untitled/src/game/game.cpp"
+  "/Users/Anita/untitled/src/game/gameoptionsmenu.cpp"
+  "/Users/Anita/untitled/src/game/gamesettings.cpp"
   "/Users/Anita/untitled/src/mainwindow.cpp"
   "/Users/Anita/untitled/src/menus/addquestionmenu.cpp"
   "/Users/Anita/untitled/src/menus/main.cpp"
@@ -26,7 +28,9 @@ endif()
 # APP_SOURCES at CMakeLists.txt:8 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/Users/Anita/untitled/src/*.h")
 set(OLD_GLOB
-  "/Users/Anita/untitled/src/game.h"
+  "/Users/Anita/untitled/src/game/game.h"
+  "/Users/Anita/untitled/src/game/gameoptionsmenu.h"
+  "/Users/Anita/untitled/src/game/gamesettings.h"
   "/Users/Anita/untitled/src/mainwindow.h"
   "/Users/Anita/untitled/src/menus/addquestionmenu.h"
   "/Users/Anita/untitled/src/menus/mainmenu.h"

@@ -5,7 +5,9 @@
 			"expression" : "/Users/Anita/untitled/src/*.cpp",
 			"paths" : 
 			[
-				"/Users/Anita/untitled/src/game.cpp",
+				"/Users/Anita/untitled/src/game/game.cpp",
+				"/Users/Anita/untitled/src/game/gameoptionsmenu.cpp",
+				"/Users/Anita/untitled/src/game/mathgame.cpp",
 				"/Users/Anita/untitled/src/mainwindow.cpp",
 				"/Users/Anita/untitled/src/menus/addquestionmenu.cpp",
 				"/Users/Anita/untitled/src/menus/main.cpp",
@@ -24,7 +26,10 @@
 			"expression" : "/Users/Anita/untitled/src/*.h",
 			"paths" : 
 			[
-				"/Users/Anita/untitled/src/game.h",
+				"/Users/Anita/untitled/src/game/game.h",
+				"/Users/Anita/untitled/src/game/gameoptionsmenu.h",
+				"/Users/Anita/untitled/src/game/gamesettings.h",
+				"/Users/Anita/untitled/src/game/mathgame.h",
 				"/Users/Anita/untitled/src/mainwindow.h",
 				"/Users/Anita/untitled/src/menus/addquestionmenu.h",
 				"/Users/Anita/untitled/src/menus/mainmenu.h",

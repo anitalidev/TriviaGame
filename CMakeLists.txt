@@ -23,6 +23,7 @@ target_include_directories(untitled PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/ui
     ${CMAKE_CURRENT_SOURCE_DIR}/src/questions
     ${CMAKE_CURRENT_SOURCE_DIR}/src/menus
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/game
 )
 
 target_link_libraries(untitled PRIVATE

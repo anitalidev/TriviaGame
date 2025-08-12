@@ -1,4 +1,61 @@
 {
+	"globsDependent" : 
+	[
+		{
+			"expression" : "/Users/Anita/untitled/src/*.cpp",
+			"paths" : 
+			[
+				"/Users/Anita/untitled/src/game/game.cpp",
+				"/Users/Anita/untitled/src/game/gameoptionsmenu.cpp",
+				"/Users/Anita/untitled/src/game/gamesettings.cpp",
+				"/Users/Anita/untitled/src/mainwindow.cpp",
+				"/Users/Anita/untitled/src/menus/addquestionmenu.cpp",
+				"/Users/Anita/untitled/src/menus/main.cpp",
+				"/Users/Anita/untitled/src/menus/mainmenu.cpp",
+				"/Users/Anita/untitled/src/menus/managequestionsmenu.cpp",
+				"/Users/Anita/untitled/src/menus/optionsmenu.cpp",
+				"/Users/Anita/untitled/src/menus/questionbank.cpp",
+				"/Users/Anita/untitled/src/questions/mcquestion.cpp",
+				"/Users/Anita/untitled/src/questions/question.cpp",
+				"/Users/Anita/untitled/src/questions/saquestion.cpp",
+				"/Users/Anita/untitled/src/questions/tfquestion.cpp"
+			],
+			"recurse" : true
+		},
+		{
+			"expression" : "/Users/Anita/untitled/src/*.h",
+			"paths" : 
+			[
+				"/Users/Anita/untitled/src/game/game.h",
+				"/Users/Anita/untitled/src/game/gameoptionsmenu.h",
+				"/Users/Anita/untitled/src/game/gamesettings.h",
+				"/Users/Anita/untitled/src/mainwindow.h",
+				"/Users/Anita/untitled/src/menus/addquestionmenu.h",
+				"/Users/Anita/untitled/src/menus/mainmenu.h",
+				"/Users/Anita/untitled/src/menus/managequestionsmenu.h",
+				"/Users/Anita/untitled/src/menus/optionsmenu.h",
+				"/Users/Anita/untitled/src/menus/questionbank.h",
+				"/Users/Anita/untitled/src/questions/mcquestion.h",
+				"/Users/Anita/untitled/src/questions/question.h",
+				"/Users/Anita/untitled/src/questions/saquestion.h",
+				"/Users/Anita/untitled/src/questions/tfquestion.h"
+			],
+			"recurse" : true
+		},
+		{
+			"expression" : "/Users/Anita/untitled/src/*.qrc",
+			"paths" : [],
+			"recurse" : true
+		},
+		{
+			"expression" : "/Users/Anita/untitled/src/*.ui",
+			"paths" : 
+			[
+				"/Users/Anita/untitled/src/mainwindow.ui"
+			],
+			"recurse" : true
+		}
+	],
 	"inputs" : 
 	[
 		{

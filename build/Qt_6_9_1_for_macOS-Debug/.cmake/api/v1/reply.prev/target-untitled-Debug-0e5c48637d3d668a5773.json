@@ -20,7 +20,8 @@
 			"include",
 			"find_package",
 			"find_dependency",
-			"_qt_internal_find_qt_dependencies"
+			"_qt_internal_find_qt_dependencies",
+			"target_include_directories"
 		],
 		"files" : 
 		[
@@ -45,7 +46,7 @@
 			{
 				"command" : 3,
 				"file" : 1,
-				"line" : 8,
+				"line" : 15,
 				"parent" : 0
 			},
 			{
@@ -69,13 +70,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 30,
+				"line" : 36,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 26,
+				"line" : 29,
 				"parent" : 0
 			},
 			{
@@ -195,6 +196,12 @@
 				"file" : 10,
 				"line" : 62,
 				"parent" : 27
+			},
+			{
+				"command" : 11,
+				"file" : 1,
+				"line" : 21,
+				"parent" : 0
 			}
 		]
 	},
@@ -247,6 +254,26 @@
 					"path" : "/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/untitled_autogen/include"
 				},
 				{
+					"backtrace" : 29,
+					"path" : "/Users/Anita/untitled/src"
+				},
+				{
+					"backtrace" : 29,
+					"path" : "/Users/Anita/untitled/ui"
+				},
+				{
+					"backtrace" : 29,
+					"path" : "/Users/Anita/untitled/src/questions"
+				},
+				{
+					"backtrace" : 29,
+					"path" : "/Users/Anita/untitled/src/menus"
+				},
+				{
+					"backtrace" : 29,
+					"path" : "/Users/Anita/untitled/src/game"
+				},
+				{
 					"backtrace" : 23,
 					"isSystem" : true,
 					"path" : "/Users/Anita/Qt/6.9.1/macos/lib/QtCore.framework/Headers"
@@ -285,16 +312,19 @@
 			[
 				0,
 				1,
-				2,
+				3,
 				6,
 				8,
-				10,
-				12,
+				11,
+				13,
 				14,
 				16,
 				18,
 				20,
-				22
+				22,
+				24,
+				26,
+				28
 			]
 		}
 	],
@@ -414,8 +444,8 @@
 			"sourceIndexes" : 
 			[
 				0,
-				23,
-				24
+				30,
+				31
 			]
 		},
 		{
@@ -423,46 +453,53 @@
 			"sourceIndexes" : 
 			[
 				1,
-				2,
+				3,
 				6,
 				8,
-				10,
-				12,
+				11,
+				13,
 				14,
 				16,
 				18,
 				20,
-				22
+				22,
+				24,
+				26,
+				28
 			]
 		},
 		{
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				3,
+				2,
+				4,
 				5,
 				7,
 				9,
-				11,
-				13,
+				12,
 				15,
 				17,
 				19,
-				21
+				21,
+				23,
+				25,
+				27,
+				29
 			]
 		},
 		{
 			"name" : "Forms",
 			"sourceIndexes" : 
 			[
-				4
+				10
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				25
+				32
 			]
 		}
 	],
@@ -478,8 +515,40 @@
 		{
 			"backtrace" : 4,
 			"compileGroupIndex" : 0,
-			"path" : "src/main.cpp",
+			"path" : "src/game/game.cpp",
 			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/game/game.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/game/gameoptionsmenu.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/game/gameoptionsmenu.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/game/gamesettings.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/game/mathgame.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/game/mathgame.h",
+			"sourceGroupIndex" : 2
 		},
 		{
 			"backtrace" : 4,
@@ -499,102 +568,108 @@
 		},
 		{
 			"backtrace" : 4,
-			"path" : "src/question.h",
+			"compileGroupIndex" : 0,
+			"path" : "src/menus/addquestionmenu.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/menus/addquestionmenu.h",
 			"sourceGroupIndex" : 2
 		},
 		{
 			"backtrace" : 4,
 			"compileGroupIndex" : 0,
-			"path" : "src/question.cpp",
+			"path" : "src/menus/main.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 4,
-			"path" : "src/mcquestion.h",
+			"compileGroupIndex" : 0,
+			"path" : "src/menus/mainmenu.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/menus/mainmenu.h",
 			"sourceGroupIndex" : 2
 		},
 		{
 			"backtrace" : 4,
 			"compileGroupIndex" : 0,
-			"path" : "src/mcquestion.cpp",
+			"path" : "src/menus/managequestionsmenu.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 4,
-			"path" : "src/saquestion.h",
+			"path" : "src/menus/managequestionsmenu.h",
 			"sourceGroupIndex" : 2
 		},
 		{
 			"backtrace" : 4,
 			"compileGroupIndex" : 0,
-			"path" : "src/saquestion.cpp",
+			"path" : "src/menus/optionsmenu.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 4,
-			"path" : "src/mainmenu.h",
+			"path" : "src/menus/optionsmenu.h",
 			"sourceGroupIndex" : 2
 		},
 		{
 			"backtrace" : 4,
 			"compileGroupIndex" : 0,
-			"path" : "src/mainmenu.cpp",
+			"path" : "src/menus/questionbank.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 4,
-			"path" : "src/game.h",
+			"path" : "src/menus/questionbank.h",
 			"sourceGroupIndex" : 2
 		},
 		{
 			"backtrace" : 4,
 			"compileGroupIndex" : 0,
-			"path" : "src/game.cpp",
+			"path" : "src/questions/mcquestion.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 4,
-			"path" : "src/optionsmenu.h",
+			"path" : "src/questions/mcquestion.h",
 			"sourceGroupIndex" : 2
 		},
 		{
 			"backtrace" : 4,
 			"compileGroupIndex" : 0,
-			"path" : "src/optionsmenu.cpp",
+			"path" : "src/questions/question.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 4,
-			"path" : "src/questionbank.h",
+			"path" : "src/questions/question.h",
 			"sourceGroupIndex" : 2
 		},
 		{
 			"backtrace" : 4,
 			"compileGroupIndex" : 0,
-			"path" : "src/questionbank.cpp",
+			"path" : "src/questions/saquestion.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 4,
-			"path" : "src/managequestionsmenu.h",
+			"path" : "src/questions/saquestion.h",
 			"sourceGroupIndex" : 2
 		},
 		{
 			"backtrace" : 4,
 			"compileGroupIndex" : 0,
-			"path" : "src/managequestionsmenu.cpp",
+			"path" : "src/questions/tfquestion.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 4,
-			"path" : "src/addquestionmenu.h",
+			"path" : "src/questions/tfquestion.h",
 			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 4,
-			"compileGroupIndex" : 0,
-			"path" : "src/addquestionmenu.cpp",
-			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
