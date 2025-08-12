@@ -9,6 +9,7 @@
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow) {
     questions_ = new QuestionBank(std::vector<std::unique_ptr<Question>>());
+    addSampleQuestions(*questions_); // FOR TESTING ONLY
 
     ui->setupUi(this);
 
@@ -20,6 +21,8 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     OptionsMenu* options = addPage<OptionsMenu>(Page::Options);
     ManageQuestionsMenu* manageQuestions = addPage<ManageQuestionsMenu>(Page::ManageQuestions);
     AddQuestionMenu* addQuestion = addPage<AddQuestionMenu>(Page::AddQuestion);
+
+    manageQuestions->setQuestions(*questions_);
 
     connect(menu, &MainMenu::start, this, [this]{
         goTo(Page::Game);
@@ -85,4 +88,41 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
 MainWindow::~MainWindow()
 {
     delete ui;
+}
+
+void MainWindow::addSampleQuestions(QuestionBank& questionBank) { // FOR TESTING ONLY
+
+    QStringList mc1Choices = {"Mercury", "Venus", "Earth", "Mars"};
+    questionBank.addQuestion(std::make_unique<MCQuestion>(
+        "Which planet is known as the Red Planet?",
+        mc1Choices,
+        3
+        ));
+
+    QStringList mc2Choices = {"4", "5", "6", "7"};
+    questionBank.addQuestion(std::make_unique<MCQuestion>(
+        "What is 2 + 2",
+        mc2Choices,
+        0
+        ));
+
+    questionBank.addQuestion(std::make_unique<SAQuestion>(
+        "What is the capital of France?",
+        "Paris"
+        ));
+
+    questionBank.addQuestion(std::make_unique<SAQuestion>(
+        "Who wrote 'Romeo and Juliet'?",
+        "William Shakespeare"
+        ));
+
+    questionBank.addQuestion(std::make_unique<TFQuestion>(
+        "The Sun is a star.",
+        "True"
+        ));
+
+    questionBank.addQuestion(std::make_unique<TFQuestion>(
+        "Bats are birds.",
+        "False"
+        ));
 }
