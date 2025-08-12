@@ -3,6 +3,7 @@
 
 #include "mainmenu.h"
 #include "game.h"
+#include "gameoptionsmenu.h"
 #include "optionsmenu.h"
 #include "managequestionsmenu.h"
 #include "addquestionmenu.h"
@@ -16,35 +17,46 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     stack_ = new QStackedWidget(this);
     setCentralWidget(stack_);
 
-    MainMenu* menu    = addPage<MainMenu>(Page::Menu);
     Game* game    = addPage<Game>(Page::Game);
+    MainMenu* menu    = addPage<MainMenu>(Page::Menu);
+    GameOptionsMenu* gameOptions    = addPage<GameOptionsMenu>(Page::GameOptionsMenu);
     OptionsMenu* options = addPage<OptionsMenu>(Page::Options);
     ManageQuestionsMenu* manageQuestions = addPage<ManageQuestionsMenu>(Page::ManageQuestions);
     AddQuestionMenu* addQuestion = addPage<AddQuestionMenu>(Page::AddQuestion);
 
     manageQuestions->setQuestions(*questions_);
 
+    // User wants to start game
     connect(menu, &MainMenu::start, this, [this]{
-        goTo(Page::Game);
+        goTo(Page::GameOptionsMenu);
     });
+
+    // User wants to see options/settings
     connect(menu, &MainMenu::options, this, [this]{
         goTo(Page::Options);
     });
 
-    connect(game, &Game::back, this, [this]{
+    // User wants to go back from game to main menu
+    connect(gameOptions, &GameOptionsMenu::back, this, [this]{
         goTo(Page::Menu);
     });
+
+    // User wants to go back from options to main menu
     connect(options, &OptionsMenu::back, this, [this]{
         goTo(Page::Menu);
     });
+
+    // User wants to view/add/remove questions
     connect(options, &OptionsMenu::manageQuestions, this, [this]() {
         goTo(Page::ManageQuestions);
     });
 
+    // User wants to add a question
     connect(manageQuestions, &ManageQuestionsMenu::addQuestion, this, [this]() {
         goTo(Page::AddQuestion);
     });
 
+    // User is adding a question
     connect(addQuestion, &AddQuestionMenu::submit, this,
             [this, manageQuestions](QString type, QString q, QString a) {
             // types: "Multiple Choice", "True/False", "Short Answer"
@@ -68,14 +80,27 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
                 goTo(Page::ManageQuestions);
             });
 
+    // User would like to go back from managing questions to options
     connect(manageQuestions, &ManageQuestionsMenu::back, this, [this]() {
         goTo(Page::Options);
     });
 
+    // User would like to start the game
+    connect(gameOptions, &GameOptionsMenu::start, this, [this]() {
+        goTo(Page::Game);
+    });
+
+    // User would like to quit the game
+    connect(game, &Game::quit, this, [this]() {
+        goTo(Page::GameOptionsMenu);
+    });
+
+    // User would no longer like to add a qusetion
     connect(addQuestion, &AddQuestionMenu::cancel, this, [this]() {
         goTo(Page::ManageQuestions);
     });
 
+    // User would like to remove a question
     connect(manageQuestions, &ManageQuestionsMenu::remove, this, [this, manageQuestions](int idx){
         questions_->removeQuestion(idx);
         manageQuestions->setQuestions(*questions_);

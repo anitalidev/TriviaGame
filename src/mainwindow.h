@@ -7,7 +7,7 @@
 #include <QHashFunctions>
 #include "questionbank.h"
 
-enum class Page { Menu, Game, Options, ManageQuestions, AddQuestion };
+enum class Page { Menu, GameOptionsMenu, Game, Options, ManageQuestions, AddQuestion };
 
 inline uint qHash(Page key, uint seed = 0) noexcept {
     return ::qHash(static_cast<int>(key), seed);
@@ -32,6 +32,8 @@ private:
     QHash<Page, int> pageIndex_;
 
     QuestionBank* questions_;
+
+    void addSampleQuestions(QuestionBank& questionBank); // FOR TESTING ONLY
 
     template <typename T>
     T* addPage(Page id) {
