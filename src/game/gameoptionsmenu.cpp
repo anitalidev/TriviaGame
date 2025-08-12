@@ -12,10 +12,12 @@ GameOptionsMenu::GameOptionsMenu(QWidget* parent) : QWidget(parent) {
 
 
     backButton->setFixedSize(80, 30);
+
     startButton->setFixedHeight(80);
+    startButton->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
 
     layout->addWidget(backButton, 0, 0, Qt::AlignLeft | Qt::AlignTop);
-    layout->addWidget(startButton);
+    layout->addWidget(startButton, 1, 0, 1, -1, Qt::AlignTop);
 
     connect(backButton, &QPushButton::clicked, this, &GameOptionsMenu::back);
     connect(startButton, &QPushButton::clicked, this, [this]{

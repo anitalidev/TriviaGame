@@ -19,6 +19,10 @@ Game::Game(QWidget* parent) : QWidget(parent) {
     setLayout(layout);
 }
 
+void Game::start() {
+    startRun();
+}
+
 void Game::startRun() {
     // TODO: pull first question, show it, wire answer input, decrement lives, etc.
     // e.g., auto* q = bank_->nextQuestion();
