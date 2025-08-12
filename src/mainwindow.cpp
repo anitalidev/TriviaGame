@@ -42,8 +42,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
 
     connect(addQuestion, &AddQuestionMenu::submit, this,
             [this, manageQuestions](QString type, QString q, QString a) {
-                // Create a Question object based on type & add to QuestionBank
-                // Then refresh manageQuestions->setQuestions(...)
+                // TODO
                 goTo(Page::ManageQuestions);
             });
 
@@ -53,6 +52,10 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
 
     connect(addQuestion, &AddQuestionMenu::cancel, this, [this]() {
         goTo(Page::ManageQuestions);
+    });
+
+    connect(manageQuestions, &ManageQuestionsMenu::remove, this, [this, manageQuestions](int idx){
+        // TODO
     });
 
 

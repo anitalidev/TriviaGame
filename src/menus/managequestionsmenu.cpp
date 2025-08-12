@@ -1,26 +1,47 @@
 #include "managequestionsmenu.h"
 
 #include <QVBoxLayout>
+#include <QHBoxLayout>
 #include <QPushButton>
+#include <QListWidget>
 
-ManageQuestionsMenu::ManageQuestionsMenu(QWidget* parent) {
-    QVBoxLayout* layout = new QVBoxLayout(this);
-    layout->addStretch(1);
-    layout->setSpacing(15);
+ManageQuestionsMenu::ManageQuestionsMenu(QWidget* parent) : QWidget(parent) {
+    auto* layout = new QVBoxLayout(this);
+    layout->setSpacing(12);
+    layout->setContentsMargins(12, 12, 12, 12);
 
-    QPushButton* homeButton = new QPushButton("Home", this);
-    QPushButton* addQuestoinButton = new QPushButton("Add Question", this);
+    questionList_ = new QListWidget(this);
+    layout->addWidget(questionList_, 1);
 
-    homeButton->setFixedHeight(80);
-    addQuestoinButton->setFixedHeight(80);
+    QHBoxLayout* row = new QHBoxLayout();
+    QPushButton* addQuestionButton = new QPushButton("Add Question", this);
+    removeButton_ = new QPushButton("Remove", this);
+    QPushButton* backButton = new QPushButton("Back", this);
 
-    layout->addWidget(homeButton);
-    layout->addWidget(addQuestoinButton);
+    addQuestionButton->setFixedHeight(40);
+    removeButton_->setFixedHeight(40);
+    backButton->setFixedHeight(40);
 
-    layout->addStretch(1);
+    row->addWidget(backButton);
+    row->addStretch(2);
+    row->addWidget(addQuestionButton);
+    row->addWidget(removeButton_);
+    layout->addLayout(row);
 
-    connect(homeButton, &QPushButton::clicked, this, &ManageQuestionsMenu::back);
-    connect(addQuestoinButton, &QPushButton::clicked, this, &ManageQuestionsMenu::addQuestion);
+    connect(backButton,        &QPushButton::clicked, this, &ManageQuestionsMenu::back);
+    connect(addQuestionButton, &QPushButton::clicked, this, &ManageQuestionsMenu::addQuestion);
 
-    setLayout(layout);
+    connect(removeButton_, &QPushButton::clicked, this, [this]{
+        const int row = questionList_->currentRow();
+        if (row >= 0) {
+            emit remove(row);
+        }
+    });
+}
+
+void ManageQuestionsMenu::setQuestions(const QStringList& items) {
+    questionList_->clear();
+    questionList_->addItems(items);
+
+    removeButton_->setEnabled(!items.isEmpty());
 }

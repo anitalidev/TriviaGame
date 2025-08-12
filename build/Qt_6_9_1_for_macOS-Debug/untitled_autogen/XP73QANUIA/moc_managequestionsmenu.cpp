@@ -41,7 +41,9 @@ template <> constexpr inline auto ManageQuestionsMenu::qt_create_metaobjectdata<
         "ManageQuestionsMenu",
         "back",
         "",
-        "addQuestion"
+        "addQuestion",
+        "remove",
+        "index"
     };
 
     QtMocHelpers::UintData qt_methods {
@@ -49,6 +51,10 @@ template <> constexpr inline auto ManageQuestionsMenu::qt_create_metaobjectdata<
         QtMocHelpers::SignalData<void()>(1, 2, QMC::AccessPublic, QMetaType::Void),
         // Signal 'addQuestion'
         QtMocHelpers::SignalData<void()>(3, 2, QMC::AccessPublic, QMetaType::Void),
+        // Signal 'remove'
+        QtMocHelpers::SignalData<void(int)>(4, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::Int, 5 },
+        }}),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -74,6 +80,7 @@ void ManageQuestionsMenu::qt_static_metacall(QObject *_o, QMetaObject::Call _c, 
         switch (_id) {
         case 0: _t->back(); break;
         case 1: _t->addQuestion(); break;
+        case 2: _t->remove((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
         default: ;
         }
     }
@@ -81,6 +88,8 @@ void ManageQuestionsMenu::qt_static_metacall(QObject *_o, QMetaObject::Call _c, 
         if (QtMocHelpers::indexOfMethod<void (ManageQuestionsMenu::*)()>(_a, &ManageQuestionsMenu::back, 0))
             return;
         if (QtMocHelpers::indexOfMethod<void (ManageQuestionsMenu::*)()>(_a, &ManageQuestionsMenu::addQuestion, 1))
+            return;
+        if (QtMocHelpers::indexOfMethod<void (ManageQuestionsMenu::*)(int )>(_a, &ManageQuestionsMenu::remove, 2))
             return;
     }
 }
@@ -104,14 +113,14 @@ int ManageQuestionsMenu::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 2)
+        if (_id < 3)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 2;
+        _id -= 3;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 2)
+        if (_id < 3)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 2;
+        _id -= 3;
     }
     return _id;
 }
@@ -126,5 +135,11 @@ void ManageQuestionsMenu::back()
 void ManageQuestionsMenu::addQuestion()
 {
     QMetaObject::activate(this, &staticMetaObject, 1, nullptr);
+}
+
+// SIGNAL 2
+void ManageQuestionsMenu::remove(int _t1)
+{
+    QMetaObject::activate<void>(this, &staticMetaObject, 2, nullptr, _t1);
 }
 QT_WARNING_POP
