@@ -31,7 +31,7 @@ private:
 
     QHash<Page, int> pageIndex_;
 
-    QuestionBank* questions_;
+    std::unique_ptr<QuestionBank> questions_;
 
     void addSampleQuestions(QuestionBank& questionBank); // FOR TESTING ONLY
 

@@ -9,6 +9,8 @@ public:
 
     QString getQuestion() const override {return ask_; };
     QString getAnswer() const override {return correctAnswer_; };
+    bool checkAnswer(const QString& user) const override {return correctAnswer_ == user; };
+
 
 private:
     QString ask_;

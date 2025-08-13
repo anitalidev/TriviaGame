@@ -5048,8 +5048,8 @@
 /Users/Anita/untitled/src/menus/mainmenu.cpp
 /Users/Anita/untitled/src/mainwindow.cpp
  uic:ui_mainwindow.h
-/Users/Anita/untitled/src/game/mathgame.cpp
 /Users/Anita/untitled/src/questions/saquestion.cpp
+/Users/Anita/untitled/src/game/mathgame.cpp
 /Users/Anita/untitled/src/menus/optionsmenu.h
  mmc:Q_OBJECT
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/Availability.h
@@ -6061,8 +6061,6 @@
  mdp:/Users/Anita/untitled/src/questions/question.h
  mdp:/Users/Anita/untitled/src/questions/saquestion.h
  mdp:/Users/Anita/untitled/src/questions/tfquestion.h
-/Users/Anita/untitled/src/game/game.cpp
-/Users/Anita/untitled/src/questions/saquestion.h
 /Users/Anita/untitled/src/game/gameoptionsmenu.cpp
 /Users/Anita/untitled/src/mainwindow.h
  mmc:Q_OBJECT
@@ -7082,3 +7080,5 @@
  mdp:/Users/Anita/untitled/src/questions/question.h
  mdp:/Users/Anita/untitled/src/questions/saquestion.h
  mdp:/Users/Anita/untitled/src/questions/tfquestion.h
+/Users/Anita/untitled/src/game/game.cpp
+/Users/Anita/untitled/src/questions/saquestion.h

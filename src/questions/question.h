@@ -10,6 +10,7 @@ public:
     virtual ~Question() = default;
 
     virtual QString getQuestion() const = 0;
+    virtual bool checkAnswer(const QString& user) const = 0;
     virtual QString getAnswer() const = 0;
 
 private:
