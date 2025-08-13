@@ -1,108 +1,91 @@
 #include "game.h"
 #include <QGridLayout>
-#include <QPushButton>
 #include <QMessageBox>
-#include <QLabel>
-#include <QLineEdit>
-
+#include <QTimer>
 #include "questionbank.h"
 
 Game::Game(QWidget* parent) : QWidget(parent) {
+    QGridLayout* grid = new QGridLayout(this);
 
-    QGridLayout* layout = new QGridLayout(this);
+    QPushButton* quitBtn = new QPushButton("Quit", this);
+    quitBtn->setFixedSize(80, 30);
+    grid->addWidget(quitBtn, 0, 0, Qt::AlignLeft | Qt::AlignTop);
+    connect(quitBtn, &QPushButton::clicked, this, &Game::quit);
 
-    QPushButton* quitButton = new QPushButton("Quit", this);
-    quitButton->setFixedSize(80, 30);
+    prompt_ = new QLabel(this);
+    prompt_->setWordWrap(true);
 
-    layout->addWidget(quitButton, 0, 0, Qt::AlignLeft | Qt::AlignTop);
+    answer_ = new QLineEdit(this);
+    answer_->setFixedHeight(40);
 
-    connect(quitButton, &QPushButton::clicked, this, &Game::quit);
+    submit_ = new QPushButton("Submit", this);
+    submit_->setFixedHeight(80);
 
-    setLayout(layout);
+    QVBoxLayout* input = new QVBoxLayout;
+    input->setSpacing(2);
+    input->setContentsMargins(0, 0, 0, 0);
+    input->addWidget(prompt_);
+    input->addWidget(answer_);
+    input->addWidget(submit_);
+
+    grid->addLayout(input, 1, 0, 1, -1, Qt::AlignTop);
+    grid->setVerticalSpacing(2);
+
+    prompt_->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
+    answer_->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
+    submit_->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
+
+    answer_->setClearButtonEnabled(true);
+
+    connect(answer_, &QLineEdit::returnPressed, submit_, &QPushButton::click);
+    connect(submit_, &QPushButton::clicked, this, &Game::onSubmit);
+
+    setLayout(grid);
 }
 
 void Game::start() {
     lives_ = g_settings.lives;
-    bank_ = std::move(g_settings.questions);
+    bank_ = g_settings.questions;
 
     startRun();
 }
 
 void Game::startRun() {
-    if (!bank_ || bank_->isEmpty()) {
+    if (!bank_ || bank_->isEmpty() || bank_->questionsComplete()) {
         QMessageBox::information(this, "Done", "No questions available.");
         emit exitToMenu();
         return;
     }
 
-    if (bank_->questionsComplete()) {
+    currQ_ = bank_->nextQuestion();
+    if (!currQ_) {
         QMessageBox::information(this, "Done", "You finished all questions!");
         emit exitToMenu();
         return;
     }
 
-    Question* q = bank_->nextQuestion();
+    prompt_->setText(currQ_->getQuestion());
+    answer_->clear();
+    answer_->setFocus();
+    submit_->setEnabled(true);
+}
 
-    QGridLayout* grid = qobject_cast<QGridLayout*>(layout());
-    if (!grid) return;
+void Game::onSubmit() {
+    submit_->setEnabled(false);
+    const QString user = answer_->text().trimmed();
 
-    for (int r = grid->rowCount() - 1; r >= 1; --r) {
-        for (int c = grid->columnCount() - 1; c >= 0; --c) {
-
-            if (QLayoutItem* item = grid->itemAtPosition(r, c)) {
-                if (QWidget* w = item->widget()) {
-                    grid->removeWidget(w);
-                    w->deleteLater();
-
-                } else {
-                    grid->removeItem(item);
-                    delete item;
-
-                }
-            }
-
+    const bool correct = currQ_->checkAnswer(user);
+    if (correct) {
+        QMessageBox::information(this, "Correct", "Correct!");
+    } else {
+        if (--lives_ <= 0) {
+            QMessageBox::information(this, "Game Over", "You ran out of lives :C");
+            emit exitToMenu();
+            return;
         }
+        QMessageBox::warning(this, "Incorrect",
+                             QString("Incorrect! Try again, Lives left: %1").arg(lives_));
     }
 
-    QLabel* prompt     = new QLabel(q->getQuestion(), this);
-    QLineEdit* answer  = new QLineEdit(this);
-    QPushButton* submit = new QPushButton("Submit", this);
-
-    submit->setFixedHeight(80);
-    answer->setFixedHeight(40);
-
-    QVBoxLayout* input = new QVBoxLayout;
-    input->setSpacing(2);
-    input->addWidget(prompt);
-    input->addWidget(answer);
-    input->addWidget(submit);
-
-    grid->addLayout(input, 1, 0, 1, -1, Qt::AlignTop);
-
-    grid->setSpacing(2);
-
-    prompt->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
-    answer->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
-    submit->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
-
-
-    connect(submit, &QPushButton::clicked, this, [this, q, answer] {
-        const QString user = answer->text().trimmed();
-
-        const bool correct = q->checkAnswer(user);
-
-        if (correct) {
-            QMessageBox::information(this, "Correct", "Correct!");
-        } else {
-            if (--lives_ <= 0) {
-                QMessageBox::information(this, "Game Over", "You ran out of lives.");
-                emit exitToMenu();
-                return;
-            }
-            QMessageBox::warning(this, "Incorrect",
-                                 QString("Try the next one. Lives left: %1").arg(lives_));
-        }
-
-        startRun();
-    });
+    QTimer::singleShot(0, this, &Game::startRun);
 }

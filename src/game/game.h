@@ -3,7 +3,11 @@
 
 #include <QWidget>
 #include <memory>
+#include <QLabel>
+#include <QLineEdit>
+#include <QPushButton>
 #include "gamesettings.h"
+#include "questionbank.h"
 
 class QuestionBank;
 
@@ -12,14 +16,20 @@ class Game : public QWidget {
 public:
     explicit Game(QWidget* parent = nullptr);
     void start();
+    void onSubmit();
 
 signals:
     void quit();
     void exitToMenu();
 
 private:
-    GameSettings settings_;
     QuestionBank* bank_;
+    Question* currQ_;
+
+    QLabel*     prompt_;
+    QLineEdit*  answer_;
+    QPushButton* submit_;
+
     void buildQuestionBank();
     void startRun();
     int lives_;
