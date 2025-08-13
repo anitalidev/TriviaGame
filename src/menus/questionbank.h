@@ -26,6 +26,7 @@ public:
 
 private:
     std::vector<std::unique_ptr<Question>> questions_;
+    std::vector<std::unique_ptr<Question>> shuffledQuestions_;
     int index_;
     int count_;
     bool shuffle_;

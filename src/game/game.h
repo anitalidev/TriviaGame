@@ -4,7 +4,7 @@
 #include <QWidget>
 #include <memory>
 #include <QLabel>
-#include <QLineEdit>
+#include <QVBoxLayout>
 #include <QPushButton>
 #include "gamesettings.h"
 #include "questionbank.h"
@@ -16,7 +16,6 @@ class Game : public QWidget {
 public:
     explicit Game(QWidget* parent = nullptr);
     void start();
-    void onSubmit();
 
 signals:
     void quit();
@@ -27,12 +26,17 @@ private:
     Question* currQ_;
 
     QLabel*     prompt_;
-    QLineEdit*  answer_;
+    QVBoxLayout*  answer_;
     QPushButton* submit_;
+
+    void clearLayout(QLayout* layout);
+
+    void onSubmit(const QString& text);
 
     void buildQuestionBank();
     void startRun();
     int lives_;
+    bool shuffle_;
 };
 
 #endif

@@ -987,7 +987,6 @@
   /Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Versions/A/Headers/qkeysequence.h \
   /Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Versions/A/Headers/qpaintdevice.h \
   /Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Versions/A/Headers/qpalette.h \
-  /Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Versions/A/Headers/qpen.h \
   /Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Versions/A/Headers/qpicture.h \
   /Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Versions/A/Headers/qpixelformat.h \
   /Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Versions/A/Headers/qpixmap.h \
@@ -995,23 +994,23 @@
   /Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Versions/A/Headers/qregion.h \
   /Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Versions/A/Headers/qrgb.h \
   /Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Versions/A/Headers/qrgba64.h \
-  /Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Versions/A/Headers/qtextcursor.h \
   /Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Versions/A/Headers/qtextdocument.h \
-  /Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Versions/A/Headers/qtextformat.h \
-  /Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Versions/A/Headers/qtextoption.h \
   /Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Versions/A/Headers/qtgui-config.h \
   /Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Versions/A/Headers/qtguiexports.h \
   /Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Versions/A/Headers/qtguiglobal.h \
   /Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Versions/A/Headers/qtransform.h \
   /Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Versions/A/Headers/qwindowdefs.h \
   /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/QLabel \
-  /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/QLineEdit \
   /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/QPushButton \
+  /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/QVBoxLayout \
   /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/QWidget \
   /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qabstractbutton.h \
+  /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qboxlayout.h \
   /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qframe.h \
+  /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qgridlayout.h \
   /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qlabel.h \
-  /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qlineedit.h \
+  /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qlayout.h \
+  /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qlayoutitem.h \
   /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qpushbutton.h \
   /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qsizepolicy.h \
   /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qtwidgets-config.h \

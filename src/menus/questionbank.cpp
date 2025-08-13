@@ -1,5 +1,8 @@
 #include "questionbank.h"
 
+#include <random>
+#include <algorithm>
+
 QuestionBank::QuestionBank(std::vector<std::unique_ptr<Question>> questions) {
     index_ = 0;
     count_ = questions.size();
@@ -33,6 +36,18 @@ bool QuestionBank::isEmpty() const {
 void QuestionBank::setUp(bool shuffle) {
     index_ = 0;
     shuffle_ = shuffle;
+    if (shuffle) {
+        std::vector<std::unique_ptr<Question>> shuffledQuestions;
+        shuffledQuestions.reserve(questions_.size());
+        for (const auto& q : questions_) {
+            shuffledQuestions.push_back(q->clone());
+        }
+
+        static thread_local std::mt19937 g{std::random_device{}()};
+
+        std::shuffle(shuffledQuestions.begin(), shuffledQuestions.end(), g);
+        shuffledQuestions_ = std::move(shuffledQuestions);
+    }
 }
 
 bool QuestionBank::questionsComplete() {
@@ -43,6 +58,9 @@ bool QuestionBank::questionsComplete() {
 Question* QuestionBank::nextQuestion() {
     if (questionsComplete()) {
         return nullptr;
+    }
+    if (shuffle_) {
+        return shuffledQuestions_[index_++].get();
     }
     return questions_[index_++].get();
 }
