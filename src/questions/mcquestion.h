@@ -13,6 +13,9 @@ public:
     QString getQuestion() const override {return ask_; };
     QString getAnswer() const override {return choices_[correctIndex_]; };
     bool checkAnswer(const QString& user) const override {return choices_[correctIndex_] == user; };
+    std::unique_ptr<Question> clone() const  override {
+        return std::make_unique<MCQuestion>(*this);
+    }
 
     const QStringList& getChoices() const noexcept { return choices_; };
 

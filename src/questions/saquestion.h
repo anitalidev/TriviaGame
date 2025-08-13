@@ -12,6 +12,9 @@ public:
     QString getQuestion() const override {return ask_; };
     QString getAnswer() const override {return correctAnswer_; };
     bool checkAnswer(const QString& user) const override {return correctAnswer_ == user; };
+    std::unique_ptr<Question> clone() const  override {
+        return std::make_unique<SAQuestion>(*this);
+    }
 
 private:
     QString ask_;
