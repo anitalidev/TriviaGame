@@ -2,6 +2,9 @@
 
 #include <QGridLayout>
 #include <QPushButton>
+#include <QButtonGroup>
+#include <QRadioButton>
+#include <QCheckBox>
 
 GameOptionsMenu::GameOptionsMenu(QWidget* parent) : QWidget(parent) {
 
@@ -17,16 +20,20 @@ GameOptionsMenu::GameOptionsMenu(QWidget* parent) : QWidget(parent) {
     startButton->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
 
     layout->addWidget(backButton, 0, 0, Qt::AlignLeft | Qt::AlignTop);
-    layout->addWidget(startButton, 1, 0, 1, -1, Qt::AlignTop);
+
+    QCheckBox* askShuffle = new QCheckBox("Shuffle Questions", this);
+
+    layout->addWidget(askShuffle, 1, 0, 1, -1, Qt::AlignTop);
 
     connect(backButton, &QPushButton::clicked, this, &GameOptionsMenu::back);
-    connect(startButton, &QPushButton::clicked, this, [this]{
+    connect(startButton, &QPushButton::clicked, this, [this, askShuffle]{
         g_settings.lives = 3;
-        g_settings.shuffle = true;
+        g_settings.shuffle = askShuffle->isChecked();
         g_settings.playerName = "You";
         emit startRequested();
     });
 
-    setLayout(layout);
+    layout->addWidget(startButton, 2, 0, 1, -1, Qt::AlignTop);
 
+    setLayout(layout);
 }
