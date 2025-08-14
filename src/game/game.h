@@ -25,7 +25,7 @@ private:
     QuestionBank* bank_;
     Question* currQ_;
 
-    QLabel*     prompt_;
+    QLabel* prompt_;
     QVBoxLayout*  answer_;
     QPushButton* submit_;
 

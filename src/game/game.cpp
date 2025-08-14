@@ -70,7 +70,7 @@ void Game::startRun() {
 
     if (auto* tfQ = dynamic_cast<TFQuestion*>(currQ_)) {
         QButtonGroup* group = new QButtonGroup(this);
-
+        group->setExclusive(true);
 
         QRadioButton* trueButton = new QRadioButton("True", this);
         QRadioButton* falseButton = new QRadioButton("False", this);
