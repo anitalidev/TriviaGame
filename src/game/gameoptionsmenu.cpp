@@ -43,7 +43,7 @@ GameOptionsMenu::GameOptionsMenu(QWidget* parent) : QWidget(parent) {
     QRadioButton* hardButton = new QRadioButton("Hard (1 live)", this);
     group->addButton(easyButton, 0);
     group->addButton(medButton, 1);
-    group->addButton(medButton, 2);
+    group->addButton(hardButton, 2);
 
     layout->addWidget(difficulty, pastRow++, 0, 1, -1, Qt::AlignTop);
     layout->addWidget(easyButton, pastRow++, 0, 1, -1, Qt::AlignTop);
@@ -55,7 +55,14 @@ GameOptionsMenu::GameOptionsMenu(QWidget* parent) : QWidget(parent) {
     layout->addWidget(startButton, pastRow++, 0, 1, -1, Qt::AlignTop);
 
     connect(startButton, &QPushButton::clicked, this, [this, group, askShuffle]{
-        g_settings.lives = group->checkedButton()->text().toInt();
+        QString btn = group->checkedButton()->text();
+        if (btn == "Easy (5 lives)") {
+            g_settings.lives = 5;
+        } else if (btn == "Medium (3 lives)") {
+            g_settings.lives = 3;
+        } else {
+            g_settings.lives = 1;
+        }
         g_settings.shuffle = askShuffle->isChecked();
         g_settings.playerName = "You";
         emit startRequested();
