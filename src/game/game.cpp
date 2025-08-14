@@ -112,7 +112,11 @@ void Game::startRun() {
         connect(input, &QLineEdit::returnPressed, submit_, &QPushButton::click);
 
         connect(submit_, &QPushButton::clicked, this, [this, input]{
-            onSubmit(input->text());
+            if (input->text() != "") {
+                onSubmit(input->text());
+            } else {
+                submit_->setEnabled(true);
+            }
         });
     }
 }

@@ -76,3 +76,11 @@
 17	49	1755171563771119541	/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/untitled_autogen/mocs_compilation.cpp	10d376287c0ebff3
 49	751	1755171563803656130	CMakeFiles/untitled.dir/src/game/gameoptionsmenu.cpp.o	ef41e59050fa52e0
 751	903	1755171564505410094	untitled.app/Contents/MacOS/untitled	dc34dce6639f9b12
+5	18	1755172418501654286	/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/CMakeFiles/cmake.verify_globs	cd06b4ee6244751f
+5	14	1755172520918418229	/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/CMakeFiles/cmake.verify_globs	cd06b4ee6244751f
+19	50	1755172520932762098	untitled_autogen/timestamp	10d376287c0ebff3
+19	50	1755172520932762098	untitled_autogen/mocs_compilation.cpp	10d376287c0ebff3
+19	50	1755172520932762098	/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/untitled_autogen/timestamp	10d376287c0ebff3
+19	50	1755172520932762098	/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/untitled_autogen/mocs_compilation.cpp	10d376287c0ebff3
+50	850	1755172520963629580	CMakeFiles/untitled.dir/src/game/game.cpp.o	a95c96f3484e4a5d
+850	1003	1755172521763033861	untitled.app/Contents/MacOS/untitled	dc34dce6639f9b12
