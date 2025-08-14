@@ -17,15 +17,15 @@ public:
         return std::make_unique<MCQuestion>(*this);
     }
 
-    const QStringList& getChoices() const noexcept { return choices_; };
+    const QStringList& getChoices() const noexcept;
 
     std::size_t correctIndex() const noexcept {return correctIndex_; };
     std::size_t correctLabel() const noexcept {return correctIndex_ + 1; };
 
 private:
     QString ask_;
-    QStringList choices_;
-    std::size_t correctIndex_;
+    mutable QStringList choices_;
+    mutable std::size_t correctIndex_;
 };
 
 #endif // MCQUESTION_H
