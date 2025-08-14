@@ -71,6 +71,7 @@ void Game::startRun() {
     if (auto* tfQ = dynamic_cast<TFQuestion*>(currQ_)) {
         QButtonGroup* group = new QButtonGroup(this);
 
+
         QRadioButton* trueButton = new QRadioButton("True", this);
         QRadioButton* falseButton = new QRadioButton("False", this);
         group->addButton(trueButton, 0);
