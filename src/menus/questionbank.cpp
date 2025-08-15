@@ -64,3 +64,7 @@ Question* QuestionBank::nextQuestion() {
     }
     return questions_[index_++].get();
 }
+
+Question* QuestionBank::getQuestion(int index) {
+    return questions_[index].get();
+}

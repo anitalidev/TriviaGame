@@ -23,6 +23,8 @@ public:
     bool questionsComplete();
     Question* nextQuestion();
 
+    Question* getQuestion(int index);
+
 
 private:
     std::vector<std::unique_ptr<Question>> questions_;
