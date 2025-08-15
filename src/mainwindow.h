@@ -7,7 +7,7 @@
 #include <QHashFunctions>
 #include "questionbank.h"
 
-enum class Page { Menu, GameOptionsMenu, Game, Options, ManageQuestions, AddQuestion };
+enum class Page { Menu, GameOptionsMenu, Game, Options, ManageQuestions, AddQuestion, EditQuestion };
 
 inline uint qHash(Page key, uint seed = 0) noexcept {
     return ::qHash(static_cast<int>(key), seed);

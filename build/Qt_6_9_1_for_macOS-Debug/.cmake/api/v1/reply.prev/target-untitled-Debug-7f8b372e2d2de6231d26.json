@@ -313,29 +313,30 @@
 				0,
 				1,
 				3,
-				6,
-				8,
-				11,
-				13,
+				5,
+				7,
+				10,
+				12,
 				14,
-				16,
-				18,
-				20,
-				22,
-				24,
-				26,
-				28
+				15,
+				17,
+				19,
+				21,
+				23,
+				25,
+				27,
+				29
 			]
 		}
 	],
 	"dependencies" : 
 	[
 		{
-			"id" : "untitled_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 0,
 			"id" : "untitled_autogen::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "untitled_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "untitled::@6890427a1f51a3e7e1df",
@@ -444,8 +445,8 @@
 			"sourceIndexes" : 
 			[
 				0,
-				30,
-				31
+				31,
+				32
 			]
 		},
 		{
@@ -454,30 +455,11 @@
 			[
 				1,
 				3,
-				6,
-				8,
-				11,
-				13,
-				14,
-				16,
-				18,
-				20,
-				22,
-				24,
-				26,
-				28
-			]
-		},
-		{
-			"name" : "Header Files",
-			"sourceIndexes" : 
-			[
-				2,
-				4,
 				5,
 				7,
-				9,
+				10,
 				12,
+				14,
 				15,
 				17,
 				19,
@@ -489,17 +471,37 @@
 			]
 		},
 		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				2,
+				4,
+				6,
+				8,
+				11,
+				13,
+				16,
+				18,
+				20,
+				22,
+				24,
+				26,
+				28,
+				30
+			]
+		},
+		{
 			"name" : "Forms",
 			"sourceIndexes" : 
 			[
-				10
+				9
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				32
+				33
 			]
 		}
 	],
@@ -536,18 +538,13 @@
 		},
 		{
 			"backtrace" : 4,
-			"path" : "src/game/gamesettings.h",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 4,
 			"compileGroupIndex" : 0,
-			"path" : "src/game/mathgame.cpp",
+			"path" : "src/game/gamesettings.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 4,
-			"path" : "src/game/mathgame.h",
+			"path" : "src/game/gamesettings.h",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -575,6 +572,17 @@
 		{
 			"backtrace" : 4,
 			"path" : "src/menus/addquestionmenu.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/menus/editquestion.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/menus/editquestion.h",
 			"sourceGroupIndex" : 2
 		},
 		{

@@ -3,6 +3,7 @@
 #include "L256WXPHEP/moc_gameoptionsmenu.cpp"
 #include "UVLADIE3JM/moc_mainwindow.cpp"
 #include "XP73QANUIA/moc_addquestionmenu.cpp"
+#include "XP73QANUIA/moc_editquestionmenu.cpp"
 #include "XP73QANUIA/moc_mainmenu.cpp"
 #include "XP73QANUIA/moc_managequestionsmenu.cpp"
 #include "XP73QANUIA/moc_optionsmenu.cpp"

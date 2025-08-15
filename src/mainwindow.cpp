@@ -7,6 +7,8 @@
 #include "optionsmenu.h"
 #include "managequestionsmenu.h"
 #include "addquestionmenu.h"
+#include "editquestionmenu.h"
+#include "question.h"
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow) {
     questions_ = std::make_unique<QuestionBank>(std::vector<std::unique_ptr<Question>>());
@@ -24,6 +26,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     OptionsMenu* options = addPage<OptionsMenu>(Page::Options);
     ManageQuestionsMenu* manageQuestions = addPage<ManageQuestionsMenu>(Page::ManageQuestions);
     AddQuestionMenu* addQuestion = addPage<AddQuestionMenu>(Page::AddQuestion);
+    EditQuestionMenu* editQuestion = addPage<EditQuestionMenu>(Page::EditQuestion);
 
     manageQuestions->setQuestions(*questions_);
 
@@ -84,6 +87,16 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     // User would like to go back from managing questions to options
     connect(manageQuestions, &ManageQuestionsMenu::back, this, [this]() {
         goTo(Page::Options);
+    });
+
+    // User would like to edit a question
+    connect(manageQuestions, &ManageQuestionsMenu::editQuestion, this, [this](Question* question) {
+        goTo(Page::EditQuestion);
+    });
+
+    // User would like to leave editing a question
+    connect(editQuestion, &EditQuestionMenu::back, this, [this]() {
+        goTo(Page::ManageQuestions);
     });
 
     // User would like to start the game

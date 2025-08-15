@@ -415,6 +415,12 @@
 			null
 		],
 		[
+			"/Users/Anita/untitled/src/menus/editquestionmenu.h",
+			"MU",
+			"XP73QANUIA/moc_editquestionmenu.cpp",
+			null
+		],
+		[
 			"/Users/Anita/untitled/src/menus/mainmenu.h",
 			"MU",
 			"XP73QANUIA/moc_mainmenu.cpp",
@@ -531,6 +537,7 @@
 		[ "/Users/Anita/untitled/src/game/gamesettings.cpp", "MU", null ],
 		[ "/Users/Anita/untitled/src/mainwindow.cpp", "MU", null ],
 		[ "/Users/Anita/untitled/src/menus/addquestionmenu.cpp", "MU", null ],
+		[ "/Users/Anita/untitled/src/menus/editquestionmenu.cpp", "MU", null ],
 		[ "/Users/Anita/untitled/src/menus/main.cpp", "MU", null ],
 		[ "/Users/Anita/untitled/src/menus/mainmenu.cpp", "MU", null ],
 		[ "/Users/Anita/untitled/src/menus/managequestionsmenu.cpp", "MU", null ],

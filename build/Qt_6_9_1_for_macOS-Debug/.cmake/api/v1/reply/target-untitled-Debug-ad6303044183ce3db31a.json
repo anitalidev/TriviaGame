@@ -317,14 +317,15 @@
 				7,
 				10,
 				12,
-				13,
+				14,
 				15,
 				17,
 				19,
 				21,
 				23,
 				25,
-				27
+				27,
+				29
 			]
 		}
 	],
@@ -444,8 +445,8 @@
 			"sourceIndexes" : 
 			[
 				0,
-				29,
-				30
+				31,
+				32
 			]
 		},
 		{
@@ -458,14 +459,15 @@
 				7,
 				10,
 				12,
-				13,
+				14,
 				15,
 				17,
 				19,
 				21,
 				23,
 				25,
-				27
+				27,
+				29
 			]
 		},
 		{
@@ -477,14 +479,15 @@
 				6,
 				8,
 				11,
-				14,
+				13,
 				16,
 				18,
 				20,
 				22,
 				24,
 				26,
-				28
+				28,
+				30
 			]
 		},
 		{
@@ -498,7 +501,7 @@
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				31
+				33
 			]
 		}
 	],
@@ -569,6 +572,17 @@
 		{
 			"backtrace" : 4,
 			"path" : "src/menus/addquestionmenu.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/menus/editquestionmenu.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/menus/editquestionmenu.h",
 			"sourceGroupIndex" : 2
 		},
 		{
