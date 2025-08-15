@@ -5,19 +5,21 @@
 
 class TFQuestion : public Question {
 public:
-    TFQuestion(const QString& ask, const QString& correctAnswer);
+    TFQuestion(const QString& ask, bool correctAnswer);
 
-    QString getQuestion() const override {return ask_; };
-    QString getAnswer() const override {return correctAnswer_; };
-    bool checkAnswer(const QString& user) const override {return correctAnswer_ == user; };
-    std::unique_ptr<Question> clone() const  override {
+    QString getQuestion() const override { return ask_; };
+
+    QString getAnswer() const override { return correctAnswer_ ? "True" : "False"; };
+
+    bool checkAnswer(const QString& user) const override;
+
+    std::unique_ptr<Question> clone() const override {
         return std::make_unique<TFQuestion>(*this);
     }
 
-
 private:
     QString ask_;
-    QString correctAnswer_;
+    bool correctAnswer_;
 };
 
 #endif // TFQUESTION_H
