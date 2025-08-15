@@ -19,13 +19,16 @@ ManageQuestionsMenu::ManageQuestionsMenu(QWidget* parent) : QWidget(parent) {
 
     QHBoxLayout* row = new QHBoxLayout();
     QPushButton* addQuestionButton = new QPushButton("Add Question", this);
+    QPushButton* editQuestionButton = new QPushButton("Edit Selected Question", this);
     removeButton_ = new QPushButton("Remove", this);
 
     addQuestionButton->setFixedHeight(40);
     removeButton_->setFixedHeight(40);
+    editQuestionButton->setFixedHeight(40);
 
     row->addStretch(1);
     row->addWidget(addQuestionButton);
+    row->addWidget(editQuestionButton);
     row->addWidget(removeButton_);
     row->addStretch(1);
     layout->addLayout(row);
@@ -37,6 +40,13 @@ ManageQuestionsMenu::ManageQuestionsMenu(QWidget* parent) : QWidget(parent) {
         const int row = questionList_->currentRow();
         if (row >= 0) {
             emit remove(row);
+        }
+    });
+
+    connect(editQuestionButton, &QPushButton::clicked, this, [this]{
+        const int row = questionList_->currentRow();
+        if (row >= 0) {
+            emit editQuestion(row);
         }
     });
 }

@@ -20,7 +20,7 @@ signals:
     void back();
     void addQuestion();
     void remove(int index);
-    void editQuestion(Question* question);
+    void editQuestion(int row);
 
 private:
     QListWidget* questionList_;

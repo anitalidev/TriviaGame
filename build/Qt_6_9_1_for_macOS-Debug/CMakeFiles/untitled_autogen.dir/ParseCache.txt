@@ -1018,8 +1018,6 @@
  mdp:/Users/Anita/untitled/src/questions/saquestion.h
  mdp:/Users/Anita/untitled/src/questions/tfquestion.h
 /Users/Anita/untitled/src/game/gameoptionsmenu.cpp
-/Users/Anita/untitled/src/questions/saquestion.h
-/Users/Anita/untitled/src/game/game.cpp
 /Users/Anita/untitled/src/menus/editquestionmenu.h
  mmc:Q_OBJECT
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/Availability.h
@@ -1866,6 +1864,7 @@
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/xlocale.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/xlocale/_time.h
  mdp:/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h
+ mdp:/Users/Anita/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/Headers/QString
  mdp:/Users/Anita/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/Headers/q17memory.h
  mdp:/Users/Anita/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/Headers/q20functional.h
  mdp:/Users/Anita/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/Headers/q20iterator.h
@@ -2048,8 +2047,9 @@
  mdp:/Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qwidget.h
  mdp:/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/untitled_autogen/moc_predefs.h
  mdp:/Users/Anita/untitled/src/menus/editquestionmenu.h
-/Users/Anita/untitled/src/questions/saquestion.cpp
-/Users/Anita/untitled/src/game/mathgame.cpp
+ mdp:/Users/Anita/untitled/src/questions/question.h
+/Users/Anita/untitled/src/questions/saquestion.h
+/Users/Anita/untitled/src/game/game.cpp
 /Users/Anita/untitled/src/menus/optionsmenu.h
  mmc:Q_OBJECT
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/Availability.h
@@ -3061,9 +3061,11 @@
  mdp:/Users/Anita/untitled/src/questions/question.h
  mdp:/Users/Anita/untitled/src/questions/saquestion.h
  mdp:/Users/Anita/untitled/src/questions/tfquestion.h
-/Users/Anita/untitled/src/menus/mainmenu.cpp
+/Users/Anita/untitled/src/questions/saquestion.cpp
+/Users/Anita/untitled/src/game/mathgame.cpp
 /Users/Anita/untitled/src/mainwindow.cpp
  uic:ui_mainwindow.h
+/Users/Anita/untitled/src/menus/mainmenu.cpp
 /Users/Anita/untitled/src/menus/managequestionsmenu.h
  mmc:Q_OBJECT
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/Availability.h
@@ -6108,11 +6110,9 @@
  mdp:/Users/Anita/untitled/src/menus/addquestionmenu.h
 /Users/Anita/untitled/src/menus/addquestionmenu.cpp
 /Users/Anita/untitled/src/game/gamesettings.cpp
+/Users/Anita/untitled/src/game/gamesettings.h
 /Users/Anita/untitled/src/questions/question.h
 /Users/Anita/untitled/src/questions/question.cpp
-/Users/Anita/untitled/src/game/gamesettings.h
-/Users/Anita/untitled/src/menus/editquestionmenu.cpp
-/Users/Anita/untitled/src/questions/mcquestion.cpp
 /Users/Anita/untitled/src/game/gameoptionsmenu.h
  mmc:Q_OBJECT
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/Availability.h
@@ -7119,8 +7119,8 @@
  mdp:/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/untitled_autogen/moc_predefs.h
  mdp:/Users/Anita/untitled/src/game/gameoptionsmenu.h
  mdp:/Users/Anita/untitled/src/game/gamesettings.h
-/Users/Anita/untitled/src/menus/optionsmenu.cpp
-/Users/Anita/untitled/src/menus/questionbank.h
+/Users/Anita/untitled/src/menus/editquestionmenu.cpp
+/Users/Anita/untitled/src/questions/mcquestion.cpp
 /Users/Anita/untitled/src/menus/questionbank.cpp
 /Users/Anita/untitled/src/menus/mainmenu.h
  mmc:Q_OBJECT
@@ -8126,9 +8126,11 @@
  mdp:/Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qwidget.h
  mdp:/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/untitled_autogen/moc_predefs.h
  mdp:/Users/Anita/untitled/src/menus/mainmenu.h
-/Users/Anita/untitled/src/questions/tfquestion.h
 /Users/Anita/untitled/src/menus/managequestionsmenu.cpp
 /Users/Anita/untitled/src/questions/mcquestion.h
+/Users/Anita/untitled/src/menus/questionbank.h
+/Users/Anita/untitled/src/menus/optionsmenu.cpp
+/Users/Anita/untitled/src/questions/tfquestion.h
 /Users/Anita/untitled/src/questions/tfquestion.cpp
 /Users/Anita/untitled/src/game/mathgame.h
 /Users/Anita/untitled/src/menus/main.cpp

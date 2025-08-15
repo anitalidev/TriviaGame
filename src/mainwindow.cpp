@@ -90,7 +90,8 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     });
 
     // User would like to edit a question
-    connect(manageQuestions, &ManageQuestionsMenu::editQuestion, this, [this](Question* question) {
+    connect(manageQuestions, &ManageQuestionsMenu::editQuestion, this, [this, editQuestion](int row) {
+        editQuestion->setToEdit(questions_->getQuestion(row));
         goTo(Page::EditQuestion);
     });
 

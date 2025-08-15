@@ -45,8 +45,7 @@ template <> constexpr inline auto ManageQuestionsMenu::qt_create_metaobjectdata<
         "remove",
         "index",
         "editQuestion",
-        "Question*",
-        "question"
+        "row"
     };
 
     QtMocHelpers::UintData qt_methods {
@@ -59,8 +58,8 @@ template <> constexpr inline auto ManageQuestionsMenu::qt_create_metaobjectdata<
             { QMetaType::Int, 5 },
         }}),
         // Signal 'editQuestion'
-        QtMocHelpers::SignalData<void(Question *)>(6, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { 0x80000000 | 7, 8 },
+        QtMocHelpers::SignalData<void(int)>(6, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::Int, 7 },
         }}),
     };
     QtMocHelpers::UintData qt_properties {
@@ -88,7 +87,7 @@ void ManageQuestionsMenu::qt_static_metacall(QObject *_o, QMetaObject::Call _c, 
         case 0: _t->back(); break;
         case 1: _t->addQuestion(); break;
         case 2: _t->remove((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
-        case 3: _t->editQuestion((*reinterpret_cast< std::add_pointer_t<Question*>>(_a[1]))); break;
+        case 3: _t->editQuestion((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
         default: ;
         }
     }
@@ -99,7 +98,7 @@ void ManageQuestionsMenu::qt_static_metacall(QObject *_o, QMetaObject::Call _c, 
             return;
         if (QtMocHelpers::indexOfMethod<void (ManageQuestionsMenu::*)(int )>(_a, &ManageQuestionsMenu::remove, 2))
             return;
-        if (QtMocHelpers::indexOfMethod<void (ManageQuestionsMenu::*)(Question * )>(_a, &ManageQuestionsMenu::editQuestion, 3))
+        if (QtMocHelpers::indexOfMethod<void (ManageQuestionsMenu::*)(int )>(_a, &ManageQuestionsMenu::editQuestion, 3))
             return;
     }
 }
@@ -154,7 +153,7 @@ void ManageQuestionsMenu::remove(int _t1)
 }
 
 // SIGNAL 3
-void ManageQuestionsMenu::editQuestion(Question * _t1)
+void ManageQuestionsMenu::editQuestion(int _t1)
 {
     QMetaObject::activate<void>(this, &staticMetaObject, 3, nullptr, _t1);
 }

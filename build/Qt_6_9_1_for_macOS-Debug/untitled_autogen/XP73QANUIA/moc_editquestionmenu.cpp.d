@@ -844,6 +844,7 @@
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/xlocale.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/xlocale/_time.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h \
+  /Users/Anita/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/Headers/QString \
   /Users/Anita/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/Headers/q17memory.h \
   /Users/Anita/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/Headers/q20functional.h \
   /Users/Anita/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/Headers/q20iterator.h \
@@ -1023,4 +1024,5 @@
   /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qtwidgets-config.h \
   /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qtwidgetsexports.h \
   /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qtwidgetsglobal.h \
-  /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qwidget.h
+  /Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qwidget.h \
+  /Users/Anita/untitled/src/questions/question.h

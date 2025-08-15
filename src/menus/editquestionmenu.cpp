@@ -5,7 +5,7 @@
 #include <QFormLayout>
 #include <QPushButton>
 
-
+// REQUIRES: toEdit_ must have been set to a non-nullptr
 EditQuestionMenu::EditQuestionMenu(QWidget* parent) : QWidget(parent) {
     QVBoxLayout* mainLayout = new QVBoxLayout;
 
@@ -41,3 +41,8 @@ EditQuestionMenu::EditQuestionMenu(QWidget* parent) : QWidget(parent) {
 
     setLayout(mainLayout);
 }
+
+void EditQuestionMenu::setToEdit(Question* toEdit) {
+    toEdit_ = toEdit;
+}
+
