@@ -3,7 +3,6 @@
 
 #include "question.h"
 #include <QStringList>
-#include <vector>
 #include <cstddef>
 
 class MCQuestion : public Question {

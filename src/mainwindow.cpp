@@ -166,11 +166,11 @@ void MainWindow::addSampleQuestions(QuestionBank& questionBank) { // FOR TESTING
 
     questionBank.addQuestion(std::make_unique<TFQuestion>(
         "The Sun is a star.",
-        "True"
+        true
         ));
 
     questionBank.addQuestion(std::make_unique<TFQuestion>(
         "Bats are birds.",
-        "False"
+        false
         ));
 }

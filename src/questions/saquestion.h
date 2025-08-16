@@ -2,7 +2,6 @@
 #define SAQUESTION_H
 
 #include "question.h"
-#include <vector>
 #include <cstddef>
 
 class SAQuestion : public Question {
