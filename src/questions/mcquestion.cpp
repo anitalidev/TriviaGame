@@ -3,7 +3,7 @@
 #include <algorithm>
 #include <random>
 
-// REQUIRES: choices is not empty, correctIndex < choices.size() < 11
+// REQUIRES: choices is not empty
 MCQuestion::MCQuestion(const QString& ask, QStringList& choices, const std::size_t correctIndex) {
     ask_ = ask;
     choices_ = choices;

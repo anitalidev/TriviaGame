@@ -74,3 +74,16 @@
 20	59	1755357445000106752	/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/untitled_autogen/mocs_compilation.cpp	10d376287c0ebff3
 59	1117	1755357445039206178	CMakeFiles/untitled.dir/src/mainwindow.cpp.o	264b972526ed33e1
 1117	1296	1755357446097440749	untitled.app/Contents/MacOS/untitled	22365c24e225a763
+5	20	1755358030175050250	/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/CMakeFiles/cmake.verify_globs	cd06b4ee6244751f
+5	19	1755358121222941391	/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/CMakeFiles/cmake.verify_globs	cd06b4ee6244751f
+5	19	1755367368920686339	/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/CMakeFiles/cmake.verify_globs	cd06b4ee6244751f
+4	16	1755369918476381147	/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/CMakeFiles/cmake.verify_globs	cd06b4ee6244751f
+26	65	1755369918497642706	untitled_autogen/timestamp	10d376287c0ebff3
+26	65	1755369918497642706	untitled_autogen/mocs_compilation.cpp	10d376287c0ebff3
+26	65	1755369918497642706	/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/untitled_autogen/timestamp	10d376287c0ebff3
+26	65	1755369918497642706	/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/untitled_autogen/mocs_compilation.cpp	10d376287c0ebff3
+65	841	1755369918537149323	CMakeFiles/untitled.dir/src/questions/mcquestion.cpp.o	bd6b2a30975bd517
+841	1030	1755369919313209621	untitled.app/Contents/MacOS/untitled	22365c24e225a763
+5	25	1755378370716545161	/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/CMakeFiles/cmake.verify_globs	cd06b4ee6244751f
+6	17	1755378435089015361	/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/CMakeFiles/cmake.verify_globs	cd06b4ee6244751f
+5	18	1755378515398818852	/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/CMakeFiles/cmake.verify_globs	cd06b4ee6244751f
