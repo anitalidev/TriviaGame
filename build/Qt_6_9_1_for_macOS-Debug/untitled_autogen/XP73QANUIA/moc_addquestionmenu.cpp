@@ -7,6 +7,7 @@
 *****************************************************************************/
 
 #include "../../../../src/menus/addquestionmenu.h"
+#include <QtGui/qtextcursor.h>
 #include <QtCore/qmetatype.h>
 
 #include <QtCore/qtmochelpers.h>
@@ -39,21 +40,33 @@ template <> constexpr inline auto AddQuestionMenu::qt_create_metaobjectdata<qt_m
     namespace QMC = QtMocConstants;
     QtMocHelpers::StringRefStorage qt_stringData {
         "AddQuestionMenu",
-        "submit",
+        "cancel",
         "",
-        "type",
-        "q",
-        "a",
-        "cancel"
+        "submitTF",
+        "question",
+        "answerTrue",
+        "submitSA",
+        "answer",
+        "submitMC",
+        "choices",
+        "correctIndex"
     };
 
     QtMocHelpers::UintData qt_methods {
-        // Signal 'submit'
-        QtMocHelpers::SignalData<void(QString, QString, QString)>(1, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { QMetaType::QString, 3 }, { QMetaType::QString, 4 }, { QMetaType::QString, 5 },
-        }}),
         // Signal 'cancel'
-        QtMocHelpers::SignalData<void()>(6, 2, QMC::AccessPublic, QMetaType::Void),
+        QtMocHelpers::SignalData<void()>(1, 2, QMC::AccessPublic, QMetaType::Void),
+        // Signal 'submitTF'
+        QtMocHelpers::SignalData<void(const QString &, bool)>(3, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::QString, 4 }, { QMetaType::Bool, 5 },
+        }}),
+        // Signal 'submitSA'
+        QtMocHelpers::SignalData<void(const QString &, const QString &)>(6, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::QString, 4 }, { QMetaType::QString, 7 },
+        }}),
+        // Signal 'submitMC'
+        QtMocHelpers::SignalData<void(const QString &, const QStringList &, int)>(8, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::QString, 4 }, { QMetaType::QStringList, 9 }, { QMetaType::Int, 10 },
+        }}),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -77,15 +90,21 @@ void AddQuestionMenu::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int 
     auto *_t = static_cast<AddQuestionMenu *>(_o);
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: _t->submit((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[3]))); break;
-        case 1: _t->cancel(); break;
+        case 0: _t->cancel(); break;
+        case 1: _t->submitTF((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<bool>>(_a[2]))); break;
+        case 2: _t->submitSA((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[2]))); break;
+        case 3: _t->submitMC((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QStringList>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[3]))); break;
         default: ;
         }
     }
     if (_c == QMetaObject::IndexOfMethod) {
-        if (QtMocHelpers::indexOfMethod<void (AddQuestionMenu::*)(QString , QString , QString )>(_a, &AddQuestionMenu::submit, 0))
+        if (QtMocHelpers::indexOfMethod<void (AddQuestionMenu::*)()>(_a, &AddQuestionMenu::cancel, 0))
             return;
-        if (QtMocHelpers::indexOfMethod<void (AddQuestionMenu::*)()>(_a, &AddQuestionMenu::cancel, 1))
+        if (QtMocHelpers::indexOfMethod<void (AddQuestionMenu::*)(const QString & , bool )>(_a, &AddQuestionMenu::submitTF, 1))
+            return;
+        if (QtMocHelpers::indexOfMethod<void (AddQuestionMenu::*)(const QString & , const QString & )>(_a, &AddQuestionMenu::submitSA, 2))
+            return;
+        if (QtMocHelpers::indexOfMethod<void (AddQuestionMenu::*)(const QString & , const QStringList & , int )>(_a, &AddQuestionMenu::submitMC, 3))
             return;
     }
 }
@@ -109,27 +128,39 @@ int AddQuestionMenu::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 2)
+        if (_id < 4)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 2;
+        _id -= 4;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 2)
+        if (_id < 4)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 2;
+        _id -= 4;
     }
     return _id;
 }
 
 // SIGNAL 0
-void AddQuestionMenu::submit(QString _t1, QString _t2, QString _t3)
+void AddQuestionMenu::cancel()
 {
-    QMetaObject::activate<void>(this, &staticMetaObject, 0, nullptr, _t1, _t2, _t3);
+    QMetaObject::activate(this, &staticMetaObject, 0, nullptr);
 }
 
 // SIGNAL 1
-void AddQuestionMenu::cancel()
+void AddQuestionMenu::submitTF(const QString & _t1, bool _t2)
 {
-    QMetaObject::activate(this, &staticMetaObject, 1, nullptr);
+    QMetaObject::activate<void>(this, &staticMetaObject, 1, nullptr, _t1, _t2);
+}
+
+// SIGNAL 2
+void AddQuestionMenu::submitSA(const QString & _t1, const QString & _t2)
+{
+    QMetaObject::activate<void>(this, &staticMetaObject, 2, nullptr, _t1, _t2);
+}
+
+// SIGNAL 3
+void AddQuestionMenu::submitMC(const QString & _t1, const QStringList & _t2, int _t3)
+{
+    QMetaObject::activate<void>(this, &staticMetaObject, 3, nullptr, _t1, _t2, _t3);
 }
 QT_WARNING_POP

@@ -60,29 +60,36 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
         goTo(Page::AddQuestion);
     });
 
-    // User is adding a question
-    connect(addQuestion, &AddQuestionMenu::submit, this,
-            [this, manageQuestions](QString type, QString q, QString a) {
-            // types: "Multiple Choice", "True/False", "Short Answer"
-            std::unique_ptr<Question> newQuestion;
-            if (type == "Multiple Choice") {
-                QStringList list = a.split(",", Qt::SkipEmptyParts);
+    // User would like to submit a multiple choice question to add
+    connect(addQuestion, &AddQuestionMenu::submitMC, this,
+            [this, manageQuestions](const QString& q, const QStringList& choices, int correctIndex) {
+        QStringList choices_ = choices;
+        auto nq = std::make_unique<MCQuestion>(q, choices_, static_cast<std::size_t>(correctIndex));
+        questions_->addQuestion(std::move(nq));
 
-                newQuestion = std::make_unique<MCQuestion>(q, list, 0);
+        manageQuestions->setQuestions(*questions_);
+        goTo(Page::ManageQuestions);
+    });
 
+    // User would like to submit a true/false question to add
+    connect(addQuestion, &AddQuestionMenu::submitTF, this,
+            [this, manageQuestions](const QString& q, bool answerTrue) {
+        auto nq = std::make_unique<TFQuestion>(q, answerTrue);
+        questions_->addQuestion(std::move(nq));
 
-            } else if (type == "True/False") {
-                QString tf(a == "True" ? "True" : "False");
-                newQuestion = std::make_unique<TFQuestion>(q, tf);
-            } else {
-                newQuestion = std::make_unique<SAQuestion>(q, a);
-            }
+        manageQuestions->setQuestions(*questions_);
+        goTo(Page::ManageQuestions);
+    });
 
-            questions_->addQuestion(std::move(newQuestion));
-            manageQuestions->setQuestions(*questions_);
+    // User would like to submit a short answer question to add
+    connect(addQuestion, &AddQuestionMenu::submitSA, this,
+            [this, manageQuestions](const QString& q, const QString& a) {
+        auto nq = std::make_unique<SAQuestion>(q, a);
+        questions_->addQuestion(std::move(nq));
 
-                goTo(Page::ManageQuestions);
-            });
+        manageQuestions->setQuestions(*questions_);
+        goTo(Page::ManageQuestions);
+    });
 
     // User would like to go back from managing questions to options
     connect(manageQuestions, &ManageQuestionsMenu::back, this, [this]() {

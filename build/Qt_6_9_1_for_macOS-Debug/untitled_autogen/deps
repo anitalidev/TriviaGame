@@ -1009,6 +1009,7 @@ untitled_autogen/timestamp: \
 	/Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Versions/A/Headers/qtransform.h \
 	/Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Versions/A/Headers/qvalidator.h \
 	/Users/Anita/Qt/6.9.1/macos/lib/QtGui.framework/Versions/A/Headers/qwindowdefs.h \
+	/Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/QButtonGroup \
 	/Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/QComboBox \
 	/Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/QLabel \
 	/Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/QLineEdit \
@@ -1022,6 +1023,7 @@ untitled_autogen/timestamp: \
 	/Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qabstractslider.h \
 	/Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qabstractspinbox.h \
 	/Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qboxlayout.h \
+	/Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qbuttongroup.h \
 	/Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qcombobox.h \
 	/Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qframe.h \
 	/Users/Anita/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qgridlayout.h \
