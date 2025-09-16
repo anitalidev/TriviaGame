@@ -1293,6 +1293,8 @@ untitled_autogen/timestamp: \
 	/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake \
 	/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/CMakeFiles/3.30.5/CMakeSystem.cmake \
 	/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/untitled_autogen/moc_predefs.h \
+	/Users/Anita/untitled/db/dbmanager.cpp \
+	/Users/Anita/untitled/db/dbmanager.h \
 	/Users/Anita/untitled/src/game/game.cpp \
 	/Users/Anita/untitled/src/game/game.h \
 	/Users/Anita/untitled/src/game/gameoptionsmenu.cpp \

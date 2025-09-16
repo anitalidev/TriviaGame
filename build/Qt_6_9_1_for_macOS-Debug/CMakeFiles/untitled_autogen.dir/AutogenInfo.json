@@ -385,6 +385,12 @@
 	"HEADERS" : 
 	[
 		[
+			"/Users/Anita/untitled/db/dbmanager.h",
+			"MU",
+			"SQIZ3OIOWK/moc_dbmanager.cpp",
+			null
+		],
+		[
 			"/Users/Anita/untitled/src/game/game.h",
 			"MU",
 			"L256WXPHEP/moc_game.cpp",
@@ -482,6 +488,8 @@
 	],
 	"MOC_INCLUDES" : 
 	[
+		"/Users/Anita/untitled/db",
+		"/Users/Anita/untitled/data",
 		"/Users/Anita/untitled/src",
 		"/Users/Anita/untitled/ui",
 		"/Users/Anita/untitled/src/questions",
@@ -532,6 +540,7 @@
 	"SETTINGS_FILE" : "/Users/Anita/untitled/build/Qt_6_9_1_for_macOS-Debug/CMakeFiles/untitled_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "/Users/Anita/untitled/db/dbmanager.cpp", "MU", null ],
 		[ "/Users/Anita/untitled/src/game/game.cpp", "MU", null ],
 		[ "/Users/Anita/untitled/src/game/gameoptionsmenu.cpp", "MU", null ],
 		[ "/Users/Anita/untitled/src/game/gamesettings.cpp", "MU", null ],

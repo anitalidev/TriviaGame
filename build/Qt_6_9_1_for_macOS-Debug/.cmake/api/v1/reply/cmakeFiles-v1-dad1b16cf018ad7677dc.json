@@ -2,6 +2,22 @@
 	"globsDependent" : 
 	[
 		{
+			"expression" : "/Users/Anita/untitled/db/*.cpp",
+			"paths" : 
+			[
+				"/Users/Anita/untitled/db/dbmanager.cpp"
+			],
+			"recurse" : true
+		},
+		{
+			"expression" : "/Users/Anita/untitled/db/*.h",
+			"paths" : 
+			[
+				"/Users/Anita/untitled/db/dbmanager.h"
+			],
+			"recurse" : true
+		},
+		{
 			"expression" : "/Users/Anita/untitled/src/*.cpp",
 			"paths" : 
 			[
@@ -10,7 +26,7 @@
 				"/Users/Anita/untitled/src/game/gamesettings.cpp",
 				"/Users/Anita/untitled/src/mainwindow.cpp",
 				"/Users/Anita/untitled/src/menus/addquestionmenu.cpp",
-				"/Users/Anita/untitled/src/menus/editquestion.cpp",
+				"/Users/Anita/untitled/src/menus/editquestionmenu.cpp",
 				"/Users/Anita/untitled/src/menus/main.cpp",
 				"/Users/Anita/untitled/src/menus/mainmenu.cpp",
 				"/Users/Anita/untitled/src/menus/managequestionsmenu.cpp",
@@ -32,7 +48,7 @@
 				"/Users/Anita/untitled/src/game/gamesettings.h",
 				"/Users/Anita/untitled/src/mainwindow.h",
 				"/Users/Anita/untitled/src/menus/addquestionmenu.h",
-				"/Users/Anita/untitled/src/menus/editquestion.h",
+				"/Users/Anita/untitled/src/menus/editquestionmenu.h",
 				"/Users/Anita/untitled/src/menus/mainmenu.h",
 				"/Users/Anita/untitled/src/menus/managequestionsmenu.h",
 				"/Users/Anita/untitled/src/menus/optionsmenu.h",
